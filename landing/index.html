@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARS ELECTRONICA</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -11,38 +12,35 @@
 </head>
 <body>
 <section class="navbar">
-<nav class="navbar navbar-light navbar-expand-lg fixed-top">
+<nav id="nav" class="navbar navbar-light navbar-expand-lg fixed-top">
     <div class="container-fluid">        
-        <a class="navbar-brand" href="index.html"><img class="logo" src="../assets/logo_icon.png"></a>
-        <!-- Hamburger button -->
+
+        <!-- Hamburger button -->        
+        <a class="navbar-brand"><img id="btn-back-to-top" class="logo" src="../assets/logo_icon.png"></a>
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Navigation -->
+        </button>        
+
+        <!-- Navigation -->        
+
         <div id="mainNav" class="collapse navbar-collapse justify-content-start">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link btn btn-lg nav-btn">L' Appli</a>
+                    <a href="#scrollspyHeading1" class="nav-link btn btn-lg nav-btn">L' Appli</a>
                 </li>            
                 <li class="nav-item">
-                    <a href="page-2.html" class="nav-link btn btn-lg nav-btn">Fonctionnalités</a>
+                    <a href="#scrollspyHeading2" class="nav-link btn btn-lg nav-btn">Fonctionnalités</a>
                 </li>
                 <li class="nav-item">
-                    <a href="page-3.html" class="nav-link btn btn-lg nav-btn">Tarifs</a>
-                </li>
-                <li class="nav-item">
-                    <a href="page-4.html" class="nav-link btn btn-lg nav-btn">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a href="page-5.html" class="nav-link btn btn-lg nav-btn">À propos</a>
+                    <a href="#scrollspyHeading3" class="nav-link btn btn-lg nav-btn">En voir plus</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>    
 </section>
-<section class="hero">
-<div id="wrapper" class="container">
+<section class="hero" data-bs-target="#nav" data-bs-spy="scroll">
+<div id="scrollspyHeading1" class="container pt-5 pb-5">
         <div class="row">
             <div class="col-12 col-lg-6 app-text">
                 <h1 class="h2">Voici l'application <br> officielle du Festival</h1>
@@ -62,8 +60,8 @@
         </div>
     </div>
 </section>
-<section class="fonctionnalitees">
-    <div id="secondWrapper" class="container">
+<section class="fonctionnalitees" data-bs-target="#nav" data-bs-spy="scroll">
+    <div id="scrollspyHeading2" class="container pt-5">
          <div class="row justify-content-center">
             <div class="col-12">
                 <h1 class="fonction_titre h2">Fonctionnalités</h1>
@@ -75,7 +73,7 @@
         </div>
         <div class="row justify-content-center">
          <div class="col-12 col-md-6 col-lg-4">
-             <div class="card function_container">
+             <div class="card mb-4 pt-5 border border-secondary">
                 <div class="card-body functionBody">
                 <h3 class="card-title h3">
                     Fonctionnalitée 1
@@ -87,7 +85,7 @@
              
         </div>
         <div class="col-12 col-md-6 col-lg-4">
-            <div class="card function_container">
+            <div class="card mb-4 pt-5 border border-secondary">
                <div class="card-body functionBody">
                <h3 class="card-title h3">
                    Fonctionnalitée 2
@@ -99,7 +97,7 @@
             
        </div>  
        <div class="col-12 col-md-6 col-lg-4">
-        <div class="card function_container">
+        <div class="card mb-4 pt-5 border border-secondary">
            <div class="card-body functionBody">
            <h3 class="card-title h3">
                Fonctionnalitée 3
@@ -113,7 +111,7 @@
 
 
    <div class="col-12 col-md-6 col-lg-4">
-    <div class="card function_container">
+    <div class="card mb-4 pt-5 border border-secondary">
        <div class="card-body functionBody">
        <h3 class="card-title h3">
            Fonctionnalitée 4
@@ -125,7 +123,7 @@
     
 </div>
 <div class="col-12 col-md-6 col-lg-4">
-    <div class="card function_container">
+    <div class="card mb-4 pt-5 border border-secondary">
        <div class="card-body functionBody">
        <h3 class="card-title h3">
            Fonctionnalitée 5
@@ -137,7 +135,7 @@
     
 </div>
 <div class="col-12 col-md-6 col-lg-4">
-    <div class="card function_container">
+    <div class="card card mb-1 pt-5 border border-secondary">
        <div class="card-body functionBody">
        <h3 class="card-title h3">
            Fonctionnalitée 6
@@ -149,6 +147,26 @@
     
 </div>
 
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="container p-3">
+        <div class="row">
+            <div class="order-1 col-12 col-lg-6">
+                <div class="text-center text-lg-start footer-text">
+                    Charlène Gilbert
+                </div>
+            </div>
+            <div class="mt-3 mb-3 mt-lg-1 mb-lg-1 order-3 order-lg-2 col-12 col-lg-6">
+                <div class="text-center text-lg-end footer-text text-break">https://github.com/externalsip/alariebrousseau_do_megazord</div>
+            </div>
+            <div class="order-2 order-lg-3 col-12 col-lg-6">
+                <div class="text-center text-lg-start footer-text">Simon Arnold</div>
+            </div>
+            <div class="order-4 col-12 col-lg-6">
+                <div class="text-center text-lg-end footer-text">@2021</div>
+            </div>
         </div>
     </div>
 </section>

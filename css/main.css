@@ -1,6 +1,8 @@
 /*--------------------------------------------------------- 
 # Styles Généraux 
 ---------------------------------------------------------*/
+*{box-sizing: border-box;}
+
 :root {
     --white: #ffffff;
     --black: #000000;
@@ -12,11 +14,11 @@
   }
   
   @font-face {
-    src: url("assets/fonts/coolvetica/coolvetica rg.otf"), format("opentype");
+    src: url("../assets/fonts/coolvetica/coolvetica rg.otf"), format("opentype");
     font-family: "coolvetica";
   }
   @font-face {
-    src: url("assets/fonts/roboto/Roboto-Black.ttf"), format("truetype");
+    src: url("../assets/fonts/roboto/Roboto-Black.ttf"), format("truetype");
     font-family: "roboto";
   }
 
@@ -24,6 +26,7 @@
     font-size: 64px;
     font-weight: 400;
     color:var(--darkest_teal);
+    overflow: hidden;
 }
 
 h2,.h2{

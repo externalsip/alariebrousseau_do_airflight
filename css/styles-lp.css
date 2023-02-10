@@ -22,6 +22,7 @@ nav {
   color: var(--white);
 }
 
+
 .btn:hover {
   background-color: var(--darkest_teal);
 }
@@ -76,12 +77,6 @@ section.fonctionnalitees{
   margin-top: 7%;
 }
 
-.function_container{
-  margin-bottom: 5%;
-  padding-top: 30%;
-  border: var(--darkest_teal) solid 1px;
-}
-
 .band {
   width: 60%;
   height: 1px;
@@ -93,6 +88,20 @@ section.fonctionnalitees{
   font-size: 16px;
   color: var(--darkest_teal);
   line-height: 19px;
+}
+
+/*--------------------------------------------------------- 
+# Footer
+---------------------------------------------------------*/
+
+section.footer{
+  height:20%;
+  background-color: var(--light_blue);
+}
+
+.footer-text{
+  color: var(--white);
+  font-size:20px;
 }
 
 /*--------------------------------------------------------- 
@@ -109,4 +118,20 @@ section.fonctionnalitees{
     background-color: #8b95c9;
     border-radius: 0;
   }
+
+}
+
+/*--------------------------------------------------------- 
+# Global
+---------------------------------------------------------*/
+body{
+  font-size:1;
+}
+:root{
+  font-family: roboto;
+  font-size:30px;
+}
+.navbar-toggler{
+  width:60px;
+  height:60px;
 }
