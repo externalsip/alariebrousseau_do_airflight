@@ -1,0 +1,51 @@
+/*--------------------------------------------------------- 
+# Styles Généraux 
+---------------------------------------------------------*/
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --teal: #00b9ae;
+    --dark_teal: #037171;
+    --darkest_teal: #03312e;
+    --light_blue: #8b95c9;
+    --gray: #D9D9D9;
+  }
+  
+  @font-face {
+    src: url("assets/fonts/coolvetica/coolvetica rg.otf"), format("opentype");
+    font-family: "coolvetica";
+  }
+  @font-face {
+    src: url("assets/fonts/roboto/Roboto-Black.ttf"), format("truetype");
+    font-family: "roboto";
+  }
+
+  h1,.h1{
+    font-size: 64px;
+    font-weight: 400;
+    color:var(--darkest_teal);
+}
+
+h2,.h2{
+    font-size: 48px;
+    font-family: century gothic;
+    color:var(--darkest_teal);
+}
+
+h3,.h3{
+    font-family: roboto;
+    font-size:28px; 
+    color:var(--darkest_teal);
+}
+
+.btn-outline-success {
+    width: 350px;
+    border: 3px solid var(--teal);
+    color: var(--teal);
+  }
+  
+  .btn-outline-success:hover {
+    border: 3px solid var(--dark_teal);
+    background-color: var(--dark_teal);
+  }
+  
