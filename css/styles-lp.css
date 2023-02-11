@@ -8,12 +8,12 @@
 
 nav {
   background-color: var(--light_blue);
-  height: 10%;
+  height: 15%;
   box-shadow: 0px 4px 62px 1px rgba(0, 0, 0, 0.25);
 }
 
 .nav-link {
-  font-size: 25px;
+  font-size: 24px;
   margin: 0 30px 0 30px;
   font-family: coolvetica;
 }
@@ -25,6 +25,11 @@ nav {
 
 .btn:hover {
   background-color: var(--darkest_teal);
+}
+
+.btn.active{
+  background-color: var(--teal);
+  border: none;
 }
 
 /*--------------------------------------------------------- 
@@ -104,12 +109,20 @@ section.footer{
   font-size:20px;
 }
 
+a:last-child{
+  text-decoration: none;
+}
+
+a:last-child:hover{
+  color: var(--darkest_teal)
+}
+
 /*--------------------------------------------------------- 
 # Media queries
 ---------------------------------------------------------*/
 
 
-@media all and (max-width: 990px) {
+@media all and (max-width: 992px) {
   .app-text {
     text-align: center;
     margin-bottom: 10%;
@@ -120,6 +133,30 @@ section.footer{
   }
 
 }
+@media all and (min-width: 576px) and (max-width: 700px){
+  .nav-link{
+    font-size:10px;
+  }
+  .logo{
+    height:40px;
+  }
+  nav{
+    height: 10%;
+  }
+}
+
+@media all and (min-width: 700px) and (max-width: 768px){
+  .nav-link{
+    font-size:15px;
+  }
+}
+
+@media all and (max-width:576px){
+  nav{
+    height: 13%;
+  }
+}
+
 
 /*--------------------------------------------------------- 
 # Global
@@ -130,8 +167,4 @@ body{
 :root{
   font-family: roboto;
   font-size:30px;
-}
-.navbar-toggler{
-  width:60px;
-  height:60px;
 }
