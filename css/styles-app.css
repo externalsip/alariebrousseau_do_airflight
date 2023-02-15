@@ -20,11 +20,11 @@ nav {
   margin-right: 50px;
 }
 
-.hamburger{
+.navbar-toggler{
   height: 65px;
   width: 65px;
   border-style: none;
   margin-left: 50px;
-  background-color: var(--darkest-teal);
+  background-color: var(--darkest_teal);
   font-size: 32px;
 }
