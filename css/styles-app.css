@@ -17,14 +17,61 @@ nav {
   width: 75px;
   background-color: var(--white);
   border-radius: 50%;
-  margin-right: 50px;
+  margin-right: 5%;
+  background-image: url(../assets/artists/pog.PNG);
+  background-position: center;
+  background-size: 100px;
 }
 
 .navbar-toggler{
   height: 65px;
   width: 65px;
   border-style: none;
-  margin-left: 50px;
-  background-color: var(--darkest_teal);
+  margin-left: 5%;
+  background-color: var(--gray);
   font-size: 32px;
+  display: flex;
+}
+
+.navbar-brand{
+  margin: 0px;
+}
+
+.navbar-toggler-icon{
+  color: white;
+  justify-content: center;
+  align-self: center;
+}
+
+.navbar_flex{
+  display: flex;
+  justify-content: center;
+}
+
+.footer{
+  background-color: var(--darkest_teal);
+  height: 20%;
+  color: white;
+  padding: 1rem;
+}
+
+.tim_svg{
+  height: 5vh;
+}
+
+.footer_text{
+  max-width: 20em;
+  margin: 0px;
+}
+
+.tim_svg_div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_text_div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
