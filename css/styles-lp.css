@@ -134,20 +134,11 @@ a:last-child:hover{
 
 }
 @media all and (min-width: 576px) and (max-width: 700px){
-  .nav-link{
-    font-size:10px;
-  }
   .logo{
     height:40px;
   }
   nav{
     height: 10%;
-  }
-}
-
-@media all and (min-width: 700px) and (max-width: 768px){
-  .nav-link{
-    font-size:15px;
   }
 }
 
