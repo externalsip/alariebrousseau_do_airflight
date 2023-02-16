@@ -42,7 +42,6 @@ h3,.h3{
 }
 
 .btn-outline-success {
-    width: 350px;
     border: 3px solid var(--teal);
     color: var(--teal);
   }

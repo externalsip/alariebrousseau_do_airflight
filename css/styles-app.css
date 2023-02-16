@@ -8,9 +8,7 @@ nav {
   min-height: 120px;
 }
 
-.navbar {
-  display: none;
-}
+
 
 .logo {
   height: 75px;
@@ -76,6 +74,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 2em;
 }
 
 .footer_text_div {
@@ -87,12 +86,49 @@ nav {
 /*--------------------------------------------------------- 
 # Searchbar
 ---------------------------------------------------------*/
-
-.search_btn{
-  width: 70px;
-  height: 40px;
+.searchbar_group {
+  margin-top: 8.5em;
 }
 
-.form_control{
-  border-bottom-right-radius: 0px;
+.form_control {
+  max-width: 100px;
+}
+
+.btn.active {
+  background-color: var(--dark_teal);
+  border-color: var(--dark_teal);
+}
+
+.btn-outline-success {
+  --bs-btn-active-bg: var(--dark_teal);
+}
+
+.filters {
+  margin-top: 1em;
+  overflow-x: hidden;
+  min-width: 720px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  display: inline;
+}
+
+.search_button {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.btn-outline-secondary {
+  border-style: none;
+}
+
+.input-group> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }

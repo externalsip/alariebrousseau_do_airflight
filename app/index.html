@@ -1,104 +1,119 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="robots" content="noindex" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Mobile App</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
-    />
-    <link href="../css/main.css" rel="stylesheet" />
-    <link href="../css/styles-app.css" rel="stylesheet" />
-  </head>
-  <body>
-    <header></header>
-    <main>
-      <div class="container-fluid navbar_flex">
-        <nav class="navbar fixed-top">
-          <button
-            class="navbar-toggler navbar-toggler-left"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNav"
-            aria-controls="mainNav"
-            aria-expanded="false"
-            aria-label="Affichage/masquage de la navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div id="mainNav" class="collapse navbar-collapse">
-            <ul class="navbar-nav">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Mobile App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+  <link href="../css/main.css" rel="stylesheet" />
+  <link href="../css/styles-app.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <div class="container-fluid navbar_flex">
+      <nav class="navbar fixed-top">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- esti de menu hamburger a marde -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">ARS ELECTRONICA</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a href="#" class="nav-link">Accueil</a>
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Programmation</a>
+                <a class="nav-link" href="#">Link</a>
               </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Oeuvres</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Présentation des artistes</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Amis sur carte interactive</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown
+                </a>
               </li>
             </ul>
-          </div>
-          <a class="navbar-brand" href="#">
-            <img
-              src="../assets/logo_icon.png"
-              class="logo"
-              id="btn-back-to-top"
-            />
-          </a>
-          <div class="account"></div>
-        </nav>
-      </div>
-      <div class="container align-items-center searchbar_group">
-        <div class="input-group searchbar">
-          <div class="form-outline">
-            <button></button>
-            <input type="search" class="form-control" placeholder="Rechercher une oeuvre, un artiste..." />
-          </div>
-          
-        </div>
-        <div class="filters"></div>
-      </div>
-      <p>lol</p>
-      <div class="container-fluid footer fixed-bottom">
-        <div
-          class="row justify-content-center justify-content-sm-between align-items-xl-center"
-        >
-          <div class="col-sm-6 col-12 footer_text_div">
-            <p class="footer_text">
-              Projet fictif réalisé dans le cadre du cours Optimisation Web
-              582-424MO. UI de l'app créé par Quoc Huy Do
-            </p>
-          </div>
-          <div class="col-sm-6 col-12 tim_svg_div">
-            <img
-              class="tim_svg"
-              src="https://tim-montmorency.com/timdoc/shared/images/logo-tim.svg"
-            />
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
           </div>
         </div>
+
+        <a class="navbar-brand" href="#">
+          <img src="../assets/logo_icon.png" class="logo" id="btn-back-to-top" />
+        </a>
+        <div class="account"></div>
+      </nav>
+    </div>
+
+    <!-- search bar -->
+    <div class="container align-items-center searchbar_group">
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <button class="btn btn-outline-secondary" type="button"><i class="bi-search"></i></button>
+        </div>
+        <input type="text" class="form-control" placeholder="Rechercher une oeuvre, un artiste..." aria-label="" aria-describedby="basic-addon1">
       </div>
-    </main>
-    <footer></footer>
-  </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"
-  ></script>
-  <script src="js/script.js"></script>
+    
+      <div class="row filters">
+        <div>
+          <ul>
+            <li>
+              <button class="btn btn-outline-success active" data-bs-toggle="button"> Toutes </button>
+            </li>
+            <li>
+              <button class="btn btn-outline-success" data-bs-toggle="button"> Installations intéractives </button>
+            </li>
+            <li>
+              <button class="btn btn-outline-success" data-bs-toggle="button"> Concert </button>
+            </li>
+            <li>
+              <button class="btn btn-outline-success" data-bs-toggle="button"> Performances </button>
+            </li>
+            <li>
+              <button class="btn btn-outline-success" data-bs-toggle="button"> AR / VR </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p>lol</p>
+    <!-- footer -->
+
+    <div class="container-fluid footer fixed-bottom">
+      <div class="row justify-content-center justify-content-sm-between align-items-xl-center">
+        <div class="col-sm-6 col-12 footer_text_div">
+          <p class="footer_text">
+            Projet fictif réalisé dans le cadre du cours Optimisation Web
+            582-424MO. UI de l'app créé par Quoc Huy Do
+          </p>
+        </div>
+        <div class="col-sm-6 col-12 tim_svg_div">
+          <img class="tim_svg" src="https://tim-montmorency.com/timdoc/shared/images/logo-tim.svg" />
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+
 </html>
