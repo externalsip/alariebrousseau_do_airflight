@@ -51,4 +51,12 @@ h3,.h3{
     border: 3px solid var(--dark_teal);
     background-color: var(--dark_teal);
   }
-  
+  .navbar-toggler {
+    height: 65px;
+    width: 65px;
+    border-style: none;
+    margin-left: 5%;
+    background-color: var(--gray);
+    font-size: 32px;
+    display: flex;
+  }

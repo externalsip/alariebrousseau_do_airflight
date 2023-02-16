@@ -1,7 +1,9 @@
 /*--------------------------------------------------------- 
 # Nav
 ---------------------------------------------------------*/
-
+section.navbar{
+  padding:0;
+}
 .logo {
   height: 60px;
 }
@@ -34,6 +36,11 @@ nav {
 .btn.active{
   background-color: var(--teal);
   border: none;
+}
+.navbar-toggler-icon {
+  color: white;
+  justify-content: center;
+  align-self: center;
 }
 
 /*--------------------------------------------------------- 
@@ -156,9 +163,7 @@ a:last-child:hover{
 /*--------------------------------------------------------- 
 # Global
 ---------------------------------------------------------*/
-body{
-  font-size:1;
-}
+
 :root{
   font-family: roboto;
   font-size:30px;
