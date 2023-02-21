@@ -1,158 +1,240 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Mobile App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/styles-app.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="robots" content="noindex" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Mobile App</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
-  <link href="../css/main.css" rel="stylesheet" />
-  <link href="../css/styles-app.css" rel="stylesheet" />
-</head>
+  <body>
+    <header></header>
+    <main>
+      <!-- navbar -->
+      <div class="container-fluid navbar_flex">
+        <nav class="navbar fixed-top">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-<body>
-  <header></header>
-  <main>
-    <!-- navbar -->
-    <div class="container-fluid navbar_flex">
-      <nav class="navbar fixed-top">
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
-          aria-controls="offcanvasDarkNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- borger -->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar"
-          aria-labelledby="offcanvasDarkNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">ARS ELECTRONICA</h5>
-            <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"
-              aria-label="Close"></button>
+          <!-- borger -->
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                ARS ELECTRONICA
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-dark"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Accueil</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Programmation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Oeuvres</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Présentation des artistes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Amis sur carte interactive</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Programmation</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Oeuvres</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Présentation des artistes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Amis sur carte interactive</a>
-              </li>
 
+          <a class="navbar-brand" href="#">
+            <img
+              src="../assets/logo_icon.png"
+              class="logo"
+              id="btn-back-to-top"
+            />
+          </a>
+          <div class="account"></div>
+        </nav>
+      </div>
+
+      <!-- search bar -->
+      <div class="container align-items-center searchbar_group">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <button class="btn btn-outline-secondary" type="button">
+              <i class="bi-search"></i>
+            </button>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Rechercher une oeuvre, un artiste..."
+            aria-label=""
+            aria-describedby="basic-addon1"
+          />
+        </div>
+        <!-- filters -->
+        <div class="row filters">
+          <div>
+            <ul>
+              <li>
+                <button
+                  class="btn btn-outline-success active"
+                  data-bs-toggle="button"
+                >
+                  Toutes
+                </button>
+              </li>
+              <li>
+                <button class="btn btn-outline-success" data-bs-toggle="button">
+                  Installations intéractives
+                </button>
+              </li>
+              <li>
+                <button class="btn btn-outline-success" data-bs-toggle="button">
+                  Concert
+                </button>
+              </li>
+              <li>
+                <button class="btn btn-outline-success" data-bs-toggle="button">
+                  Performances
+                </button>
+              </li>
+              <li>
+                <button class="btn btn-outline-success" data-bs-toggle="button">
+                  AR / VR
+                </button>
+              </li>
             </ul>
           </div>
         </div>
-
-        <a class="navbar-brand" href="#">
-          <img src="../assets/logo_icon.png" class="logo" id="btn-back-to-top" />
-        </a>
-        <div class="account"></div>
-      </nav>
-    </div>
-
-    <!-- search bar -->
-    <div class="container align-items-center searchbar_group">
-
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <button class="btn btn-outline-secondary" type="button"><i class="bi-search"></i></button>
-        </div>
-        <input type="text" class="form-control" placeholder="Rechercher une oeuvre, un artiste..." aria-label="" aria-describedby="basic-addon1">
-      </div>
-    <!-- filters -->
-      <div class="row filters">
-        <div>
-          <ul>
-            <li>
-              <button class="btn btn-outline-success active" data-bs-toggle="button"> Toutes </button>
-            </li>
-            <li>
-              <button class="btn btn-outline-success" data-bs-toggle="button"> Installations intéractives </button>
-            </li>
-            <li>
-              <button class="btn btn-outline-success" data-bs-toggle="button"> Concert </button>
-            </li>
-            <li>
-              <button class="btn btn-outline-success" data-bs-toggle="button"> Performances </button>
-            </li>
-            <li>
-              <button class="btn btn-outline-success" data-bs-toggle="button"> AR / VR </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- art row -->
-      <h2>En vedette</h2>
-      <div class="row">
-        <div class="col">
-          <br>
-          <div class="card art">
-            <img src="https://i.smnarnold.com/16-9.png" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Titre</h5>
-              <p class="card-text">Description</p>
-            </div>
+        <!-- art row -->
+        <h2 class="vedette_text">En vedette</h2>
+        <div class="row gx-0" id="top_cards">
+          <div class="col card_col">
+            <a href="#" class="card art">
+              <img
+                src="../assets/artworks/virtualanatomy1.jpg"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Titre</h5>
+                <h6 class="card-title">Par John Artman</h6>
+                <div class="time_date_div">
+                <h6 class="card-title time_date"> <i class="bi bi-calendar3"></i> 24 décembre 2023</h6>
+                <h6 class="card-title time_date time"> <i class="bi bi-clock"></i> 12h</h6>
+              </div>
+              <div class="card_info_div">
+              <div class="artist_avatar card_info"></div>
+              <h6 class="card-title card_info_text">  Plus d'info <i class="bi bi-chevron-right"></i></h6>
+              </div>
+              </div>
+            </a>
           </div>
-                <br>
-        </div>
-        <div class="col">
-          <br>
-          <div class="card art">
-            <img src="../assets/artworks/virtualanatomy1.jpg" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Titre</h5>
-              <p class="card-text">Description</p>
-            </div>
+
+          <div class="col card_col">
+            <a href="#" class="card art">
+              <img
+                src="../assets/artworks/virtualanatomy1.jpg"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Titre</h5>
+                <h6 class="card-title">Par John Artman</h6>
+                <div class="time_date_div">
+                <h6 class="card-title time_date"> <i class="bi bi-calendar3"></i> 24 décembre 2023</h6>
+                <h6 class="card-title time_date time"> <i class="bi bi-clock"></i> 12h</h6>
+              </div>
+              <div class="card_info_div">
+              <div class="artist_avatar card_info"></div>
+              <h6 class="card-title card_info_text">  Plus d'info <i class="bi bi-chevron-right"></i></h6>
+              </div>
+              </div>
+            </a>
           </div>
-                <br>
-        </div>
-        <div class="col">
-          <br>
-          <div class="card art">
-            <img src="https://i.smnarnold.com/16-9.png" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Titre</h5>
-              <p class="card-text">Description</p>
-            </div>
+
+          <div class="col card_col">
+            <a href="#" class="card art">
+              <img
+                src="../assets/artworks/virtualanatomy1.jpg"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Titre</h5>
+                <h6 class="card-title">Par John Artman</h6>
+                <div class="time_date_div">
+                <h6 class="card-title time_date"> <i class="bi bi-calendar3"></i> 24 décembre 2023</h6>
+                <h6 class="card-title time_date time"> <i class="bi bi-clock"></i> 12h</h6>
+              </div>
+              <div class="card_info_div">
+              <div class="artist_avatar card_info"></div>
+              <h6 class="card-title card_info_text">  Plus d'info <i class="bi bi-chevron-right"></i></h6>
+              </div>
+              </div>
+            </a>
           </div>
-                <br>
+          
+      </div> <!-- ROW END -->>
+      <p>lol</p>
+      <!-- footer -->
+
+      <div class="container-fluid footer fixed-bottom">
+        <div
+          class="row justify-content-center justify-content-sm-between align-items-xl-center"
+        >
+          <div class="col-sm-6 col-12 footer_text_div">
+            <p class="footer_text">
+              Projet fictif réalisé dans le cadre du cours Optimisation Web
+              582-424MO. UI de l'app créé par Quoc Huy Do
+            </p>
+          </div>
+          <div class="col-sm-6 col-12 tim_svg_div">
+            <img
+              class="tim_svg"
+              src="https://tim-montmorency.com/timdoc/shared/images/logo-tim.svg"
+            />
+          </div>
         </div>
       </div>
-    </div>
-    <p>lol</p>
-    <!-- footer -->
-
-    <div class="container-fluid footer fixed-bottom">
-      <div class="row justify-content-center justify-content-sm-between align-items-xl-center">
-        <div class="col-sm-6 col-12 footer_text_div">
-          <p class="footer_text">
-            Projet fictif réalisé dans le cadre du cours Optimisation Web
-            582-424MO. UI de l'app créé par Quoc Huy Do
-          </p>
-        </div>
-        <div class="col-sm-6 col-12 tim_svg_div">
-          <img class="tim_svg" src="https://tim-montmorency.com/timdoc/shared/images/logo-tim.svg" />
-        </div>
-      </div>
-    </div>
-  </main>
-  <footer></footer>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-<script src="../js/script.js"></script>
-<!-- :( -->
-
+    </main>
+    <footer></footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
+  <script src="../js/script.js"></script>
+  <!-- :( -->
 </html>

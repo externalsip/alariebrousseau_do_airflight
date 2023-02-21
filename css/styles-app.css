@@ -56,9 +56,10 @@ nav {
 
 .footer {
   background-color: var(--darkest_teal);
-  height: 30vh;
+  height: 25vh;
   color: white;
   padding: 1em;
+  display: none;
 }
 
 .tim_svg {
@@ -143,11 +144,83 @@ main{
 .art{
   overflow-x: hidden;
   height: 20vh;
+  color: black;
+  text-decoration: none;
+  min-height: 300px;
+  padding: 0px 10px 0px 10px;
+  min-width: 200px;
+  max-width: 200px;
+  transition: 0.25s;
+}
+
+.card-col{
+  padding-right: 0px;
+  max-width: 200px;
+}
+
+.art:hover{
+  background-color: var(--gray);
+}
+
+body{
+  overflow-x: hidden;
 }
 
 .card-img-top{
-  object-fit: contain;
+  object-fit: cover;
+  height: 40%;
+  min-height: 150px;
   object-position: 50% 50%;
-  height: 100%;
-  width: 100%;
+  border-bottom-left-radius: var(--bs-card-inner-border-radius);
+  border-bottom-right-radius: var(--bs-card-inner-border-radius);
+  box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.3);
+  margin-top: 10px;
+}
+
+.vedette_text{
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+.time_date{
+  color: gray;
+  font-size: 11px;
+  display: inline;
+}
+
+.time_date_div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.artist_avatar{
+  height: 35px;
+  width: 35px;
+  min-height: 35px;
+  width: 35px;
+  background-color: var(--white);
+  border-radius: 50%;
+  background-image: url(../assets/artists/pog.PNG);
+  background-position: center;
+  background-size: 50px;
+}
+
+.card_info_div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_info_text{
+  align-self: center;
+  margin-bottom: 0px;
+  color: var(--dark_teal);
+}
+
+.card-body{
+  padding: 0px;
+  padding-top: 10px;
+}
+
+#top_cards{
+  width: 140%;
 }
