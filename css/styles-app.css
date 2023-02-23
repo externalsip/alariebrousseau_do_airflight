@@ -59,7 +59,6 @@ nav {
   height: 25vh;
   color: white;
   padding: 1em;
-  display: none;
 }
 
 .tim_svg {
@@ -166,7 +165,7 @@ body{
   overflow-x: hidden;
 }
 
-.card-img-top{
+.featured_art_img{
   object-fit: cover;
   height: 40%;
   min-height: 150px;
@@ -200,9 +199,7 @@ body{
   width: 35px;
   background-color: var(--white);
   border-radius: 50%;
-  background-image: url(../assets/artists/pog.PNG);
-  background-position: center;
-  background-size: 50px;
+  object-fit: cover;
 }
 
 .card_info_div{
@@ -223,4 +220,45 @@ body{
 
 #top_cards{
   width: 140%;
+}
+
+/*--------------------------------------------------------- 
+# THE BOTTOM CARDS !!!
+---------------------------------------------------------*/
+
+.card-col{
+  padding-right: 0px;
+}
+
+.bot_card_col{
+  margin-top: 10px;
+}
+
+.bot_card_col:first-child{
+  margin-top: 0px;
+}
+
+.bot_art{
+  overflow-x: hidden;
+  height: 20vh;
+  color: black;
+  text-decoration: none;
+  min-height: 325px;
+  padding: 0px 10px 0px 10px;
+  min-width: 200px;
+  transition: 0.25s;
+}
+
+.bot_art:hover{
+  background-color: var(--gray);
+}
+
+.other_art_img{
+  object-fit: cover;
+  height: 20vh;
+  object-position: 50% 50%;
+  border-bottom-left-radius: var(--bs-card-inner-border-radius);
+  border-bottom-right-radius: var(--bs-card-inner-border-radius);
+  box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.3);
+  margin-top: 10px;
 }

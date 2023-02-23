@@ -128,6 +128,7 @@ section.fonctionnalitees{
 .user{
   width:100%;
   height:100%;
+  object-fit: cover;
 }
 
 .temoignages_band {
@@ -144,6 +145,10 @@ section.fonctionnalitees{
   position: absolute;
   left:25%;
   top:25%;
+}
+
+.user_review{
+  max-height: 20%;
 }
 
 /*--------------------------------------------------------- 
