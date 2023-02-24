@@ -102,7 +102,6 @@ section.fonctionnalitees{
 .band {
   width: 60%;
   height: 1px;
-  background-color: var(--teal);
   margin-bottom: 5px;
 }
 
@@ -152,6 +151,9 @@ section.fonctionnalitees{
 
 .hide_link{
   text-decoration: none;
+  color: var(--darkest_teal);
+}
+.hide_link:hover{
   color: var(--darkest_teal);
 }
 
