@@ -217,6 +217,11 @@ a:last-child:hover{
 
 section.faq{
   height:90%;
+  background-color: var(--bs-light);
+}
+
+.accordion{
+  width: 80%;
 }
 
 /*--------------------------------------------------------- 
