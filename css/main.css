@@ -14,40 +14,44 @@
   }
   
   @import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Roboto:wght@100&display=swap');
+  @font-face {
+    font-family: "coolvetica";
+    src: url("../assets/fonts/coolvetica/coolvetica-rg.otf"), format("opentype");
+  }
   h1,.h1{
     font-size: 64px;
     font-weight: 400;
-    color:var(--darkest_teal);
+    color:var(--bs-dark);
     overflow: hidden;
 }
 
 h2,.h2{
     font-size: 48px;
     font-family: century gothic;
-    color:var(--darkest_teal);
+    color:var(--bs-dark);
 }
 
 h3,.h3{
     font-family: 'Roboto', sans-serif;
     font-size:28px; 
-    color:var(--darkest_teal);
+    color:var(--bs-dark);
 }
 
 .btn-outline-success {
     border: 3px solid var(--teal);
-    color: var(--teal);
+    color: var(--bs-secondary);
   }
   
   .btn-outline-success:hover {
-    border: 3px solid var(--dark_teal);
-    background-color: var(--dark_teal);
+    border: 3px solid var(--bs-dark);
+    background-color: var(--bs-dark);
   }
   .navbar-toggler {
     height: 65px;
     width: 65px;
     border-style: none;
     margin-left: 5%;
-    background-color: var(--gray);
+    background-color: var(--bs-light);
     font-size: 32px;
     display: flex;
   }

@@ -9,7 +9,7 @@ section.navbar{
 }
 
 nav {
-  background-color: var(--light_blue);
+  background-color: var(--bs-primary);
   height: 15%;
   box-shadow: 0px 4px 62px 1px rgba(0, 0, 0, 0.25);
 }
@@ -25,20 +25,20 @@ nav {
 }
 
 .btn:hover.nav-link {
-  color: var(--white);
+  color: var(--bs-white);
 }
 
 
 .btn:hover {
-  background-color: var(--darkest_teal);
+  background-color: var(--bs-dark);
 }
 
 .btn.active{
-  background-color: var(--teal);
+  background-color: var(--bs-secondary);
   border: none;
 }
 .navbar-toggler-icon {
-  color: white;
+  color: var(--bs-white);
   justify-content: center;
   align-self: center;
 }
@@ -50,7 +50,7 @@ nav {
 section.hero{
   height: 90%;
   margin-top: 10%;
-  color: var(--darkest_teal);
+  color: var(--bs-dark);
 }
 
 .app-text {
@@ -92,8 +92,8 @@ section.hero{
 }
 
 section.fonctionnalitees{
-  color: var(--darkest_teal);
-  background-color: var(--gray);
+  color: var(--bs-dark);
+  background-color: var(--bs-light);
   height: 100%;
   max-width: 100%;
   margin-top: 7%;
@@ -107,13 +107,13 @@ section.fonctionnalitees{
 
 .functionBody {
   font-size: 16px;
-  color: var(--darkest_teal);
+  color: var(--bs-dark);
   line-height: 19px;
 }
 
 .icon{
   font-size: 2rem;
-  color: var(--teal);
+  color: var(--bs-secondary);
 }
 
 .fonction{
@@ -133,13 +133,13 @@ section.fonctionnalitees{
 .temoignages_band {
   width: 1px;
   height: 80%;
-  background-color: var(--teal);
+  background-color: var(--bs-secondary);
   position:absolute;
   top:10%;
 }
 .icon-temoignages{
   font-size: 2rem;
-  color: var(--teal);
+  color: var(--bs-secondary);
   position: absolute;
   left:25%;
   top:25%;
@@ -151,10 +151,10 @@ section.fonctionnalitees{
 
 .hide_link{
   text-decoration: none;
-  color: var(--darkest_teal);
+  color: var(--bs-dark);
 }
 .hide_link:hover{
-  color: var(--darkest_teal);
+  color: var(--bs-dark);
 }
 
 /*--------------------------------------------------------- 
@@ -163,11 +163,11 @@ section.fonctionnalitees{
 
 section.footer{
   height:20%;
-  background-color: var(--light_blue);
+  background-color: var(--bs-primary);
 }
 
 .footer-text{
-  color: var(--white);
+  color: var(--bs-white);
   font-size:20px;
 }
 
@@ -176,7 +176,7 @@ a:last-child{
 }
 
 a:last-child:hover{
-  color: var(--darkest_teal)
+  color: var(--bs-dark)
 }
 
 /*--------------------------------------------------------- 
@@ -190,7 +190,7 @@ a:last-child:hover{
     margin-bottom: 10%;
   }
   .nav-btn {
-    background-color: #8b95c9;
+    background-color: var(--bs-primary);
     border-radius: 0;
   }
 
@@ -210,6 +210,14 @@ a:last-child:hover{
   }
 }
 
+
+/*--------------------------------------------------------- 
+# FAQ
+---------------------------------------------------------*/
+
+section.faq{
+  height:90%;
+}
 
 /*--------------------------------------------------------- 
 # Global
