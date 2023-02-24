@@ -220,8 +220,8 @@ section.faq{
   background-color: var(--bs-light);
 }
 
-.accordion{
-  width: 80%;
+.accordion-body{
+  background-color: var(--bs-primary);
 }
 
 /*--------------------------------------------------------- 
