@@ -127,7 +127,7 @@ section.fonctionnalitees{
 
 .user{
   width:100%;
-  height:20vh;
+  height:25vh;
   object-fit: cover;
 }
 
@@ -148,6 +148,11 @@ section.fonctionnalitees{
 
 .user_review{
   max-height: 20%;
+}
+
+.hide_link{
+  text-decoration: none;
+  color: var(--darkest_teal);
 }
 
 /*--------------------------------------------------------- 
