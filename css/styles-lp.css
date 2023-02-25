@@ -224,6 +224,14 @@ section.faq{
   width: 80%;
 }
 
+.accordion-body{
+  background-color: var(--bs-primary);
+}
+
+.accordion-item:focus{
+  background-color: var(--bs-secondary);
+}
+
 /*--------------------------------------------------------- 
 # Global
 ---------------------------------------------------------*/
