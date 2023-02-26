@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Mobile App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/styles-artwork.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <!-- navbar -->
+      <div class="container-fluid navbar_flex">
+        <nav class="navbar fixed-top">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+          >
+            <span class="bi bi-chevron-left"></span>
+          </button>
+
+          <!-- borger -->
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                ARS ELECTRONICA
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-dark"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Accueil</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Programmation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Oeuvres</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Présentation des artistes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Amis sur carte interactive</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="like">
+            <i class="bi bi-heart"> </i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <img src="../assets/artworks/virtualanatomy1.jpg" class="art" />
+      <div>
+        <h1 class="art_title">Title Here</h1>
+      </div>
+
+      <!-- footer -->
+      <div class="container-fluid footer fixed-bottom">
+        <div
+          class="row justify-content-center justify-content-sm-between align-items-xl-center"
+        >
+          <div class="col-sm-6 col-12 footer_text_div">
+            <p class="footer_text">
+              Projet fictif réalisé dans le cadre du cours Optimisation Web
+              582-424MO. UI de l'app créé par Quoc Huy Do
+            </p>
+          </div>
+          <div class="col-sm-6 col-12 tim_svg_div">
+            <img
+              class="tim_svg"
+              src="https://tim-montmorency.com/timdoc/shared/images/logo-tim.svg"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"
+  ></script>
+  <script src="../js/script.js"></script>
+  <!-- :( -->
+</html>

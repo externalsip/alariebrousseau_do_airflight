@@ -3,12 +3,10 @@
 ---------------------------------------------------------*/
 
 nav {
-  background-color: var(--light_blue);
+  background-color: var(--bs-primary);
   height: 15%;
   min-height: 120px;
 }
-
-
 
 .logo {
   height: 75px;
@@ -17,7 +15,7 @@ nav {
 .account {
   height: 75px;
   width: 75px;
-  background-color: var(--white);
+  background-color: var(--bs-white);
   border-radius: 50%;
   margin-right: 5%;
   background-image: url(../assets/artists/pog.PNG);
@@ -55,10 +53,11 @@ nav {
 ---------------------------------------------------------*/
 
 .footer {
-  background-color: var(--darkest_teal);
+  background-color: var(--bs-dark);
   height: 25vh;
   color: white;
   padding: 1em;
+  display: none;
 }
 
 .tim_svg {
@@ -95,12 +94,12 @@ nav {
 }
 
 .btn.active {
-  background-color: var(--dark_teal);
-  border-color: var(--dark_teal);
+  background-color: var(--bs-info);
+  border-color: var(--bs-info);
 }
 
 .btn-outline-success {
-  --bs-btn-active-bg: var(--dark_teal);
+  --bs-btn-active-bg: var(--bs-info);
 }
 
 .filters {
@@ -197,7 +196,7 @@ body{
   width: 35px;
   min-height: 35px;
   width: 35px;
-  background-color: var(--white);
+  background-color: var(--bs-white);
   border-radius: 50%;
   object-fit: cover;
 }
@@ -210,7 +209,7 @@ body{
 .card_info_text{
   align-self: center;
   margin-bottom: 0px;
-  color: var(--dark_teal);
+  color: var(--bs-info);
 }
 
 .card-body{

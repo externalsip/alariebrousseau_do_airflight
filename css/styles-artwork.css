@@ -1,0 +1,103 @@
+/*--------------------------------------------------------- 
+# Nav
+---------------------------------------------------------*/
+
+nav {
+  background-color: #8b95c981;
+  height: 15%;
+  min-height: 120px;
+}
+
+.logo {
+  height: 75px;
+}
+
+.like {
+  height: 75px;
+  width: 75px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  margin-right: 5%;
+  background-position: center;
+  background-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bi-heart{
+  font-size: 32px;
+  color: var(--bs-red);
+}
+
+.navbar-toggler {
+  height: 65px;
+  width: 65px;
+  border-style: none;
+  margin-left: 5%;
+  background-color: var(--gray);
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-brand {
+  margin: 0px;
+}
+
+.bi-chevron-left {
+  color: black;
+  align-self: center;
+}
+
+.navbar_flex {
+  display: flex;
+  justify-content: center;
+}
+
+/*--------------------------------------------------------- 
+# Footer
+---------------------------------------------------------*/
+
+.footer {
+  background-color: var(--bs-dark);
+  height: 25vh;
+  color: white;
+  padding: 1em;
+  display: none;
+}
+
+.tim_svg {
+  height: 5vh;
+}
+
+.footer_text {
+  max-width: 20em;
+  margin: 0px;
+}
+
+.tim_svg_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+}
+
+.footer_text_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*--------------------------------------------------------- 
+# 10 years on the canvas made you into a beautiful piece of art!
+---------------------------------------------------------*/
+.art{
+  max-width: 100%;
+  position: relative;
+  top: 7.5em;
+}
+
+.art_title{
+  margin-top: 2em;
+}
