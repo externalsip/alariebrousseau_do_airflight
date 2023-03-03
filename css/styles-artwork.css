@@ -3,31 +3,26 @@
 ---------------------------------------------------------*/
 
 nav {
-  background-color: #8b95c981;
+  background-color: var(--light_blue);
   height: 15%;
   min-height: 120px;
 }
+
+
 
 .logo {
   height: 75px;
 }
 
-.like {
+.account {
   height: 75px;
   width: 75px;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--white);
   border-radius: 50%;
   margin-right: 5%;
+  background-image: url(../assets/artists/pog.PNG);
   background-position: center;
   background-size: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.bi-heart{
-  font-size: 32px;
-  color: var(--bs-red);
 }
 
 .navbar-toggler {
@@ -38,15 +33,15 @@ nav {
   background-color: var(--gray);
   font-size: 32px;
   display: flex;
-  justify-content: center;
 }
 
 .navbar-brand {
   margin: 0px;
 }
 
-.bi-chevron-left {
-  color: black;
+.navbar-toggler-icon {
+  color: white;
+  justify-content: center;
   align-self: center;
 }
 
@@ -60,7 +55,7 @@ nav {
 ---------------------------------------------------------*/
 
 .footer {
-  background-color: var(--bs-dark);
+  background-color: var(--darkest_teal);
   height: 25vh;
   color: white;
   padding: 1em;
@@ -90,14 +85,181 @@ nav {
 }
 
 /*--------------------------------------------------------- 
-# 10 years on the canvas made you into a beautiful piece of art!
+# Searchbar
 ---------------------------------------------------------*/
-.art{
-  max-width: 100%;
-  position: relative;
-  top: 7.5em;
+.searchbar_group {
+  margin-top: 8.5em;
 }
 
-.art_title{
-  margin-top: 2em;
+.form_control {
+  max-width: 100px;
+}
+
+.btn.active {
+  background-color: var(--dark_teal);
+  border-color: var(--dark_teal);
+}
+
+.btn-outline-success {
+  --bs-btn-active-bg: var(--dark_teal);
+}
+
+.filters {
+  margin-top: 1em;
+  overflow-x: hidden;
+  min-width: 720px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  display: inline;
+}
+
+.search_button {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.btn-outline-secondary {
+  border-style: none;
+}
+
+.input-group> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+main{
+  overflow-x: hidden;
+} 
+
+/*--------------------------------------------------------- 
+# THE CARDS !!!
+---------------------------------------------------------*/
+.art{
+  overflow-x: hidden;
+  height: 20vh;
+  color: black;
+  text-decoration: none;
+  min-height: 300px;
+  padding: 0px 10px 0px 10px;
+  min-width: 200px;
+  max-width: 200px;
+  transition: 0.25s;
+}
+
+.card-col{
+  padding-right: 0px;
+  max-width: 200px;
+}
+
+.art:hover{
+  background-color: var(--gray);
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.featured_art_img{
+  object-fit: cover;
+  height: 40%;
+  min-height: 150px;
+  object-position: 50% 50%;
+  border-bottom-left-radius: var(--bs-card-inner-border-radius);
+  border-bottom-right-radius: var(--bs-card-inner-border-radius);
+  box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.3);
+  margin-top: 10px;
+}
+
+.vedette_text{
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+.time_date{
+  color: gray;
+  font-size: 11px;
+  display: inline;
+}
+
+.time_date_div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.artist_avatar{
+  height: 35px;
+  width: 35px;
+  min-height: 35px;
+  width: 35px;
+  background-color: var(--white);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card_info_div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_info_text{
+  align-self: center;
+  margin-bottom: 0px;
+  color: var(--dark_teal);
+}
+
+.card-body{
+  padding: 0px;
+  padding-top: 10px;
+}
+
+#top_cards{
+  width: 140%;
+}
+
+/*--------------------------------------------------------- 
+# THE BOTTOM CARDS !!!
+---------------------------------------------------------*/
+
+.card-col{
+  padding-right: 0px;
+}
+
+.bot_card_col{
+  margin-top: 10px;
+}
+
+.bot_card_col:first-child{
+  margin-top: 0px;
+}
+
+.bot_art{
+  overflow-x: hidden;
+  height: 20vh;
+  color: black;
+  text-decoration: none;
+  min-height: 325px;
+  padding: 0px 10px 0px 10px;
+  min-width: 200px;
+  transition: 0.25s;
+}
+
+.bot_art:hover{
+  background-color: var(--gray);
+}
+
+.other_art_img{
+  object-fit: cover;
+  height: 20vh;
+  object-position: 50% 50%;
+  border-bottom-left-radius: var(--bs-card-inner-border-radius);
+  border-bottom-right-radius: var(--bs-card-inner-border-radius);
+  box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.3);
+  margin-top: 10px;
 }
