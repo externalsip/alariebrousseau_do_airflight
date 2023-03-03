@@ -6,6 +6,7 @@ nav {
   background-color: #8b95c981;
   height: 15%;
   min-height: 120px;
+  max-height: 120px;
 }
 
 .logo {
@@ -96,8 +97,30 @@ nav {
   max-width: 100%;
   position: relative;
   top: 7.5em;
+  z-index: -1;
 }
 
 .art_title{
-  margin-top: 2em;
+  margin-top: 3em;
+  font-size: 34px;
+  padding: 20px;
+  padding-bottom: 0px;
+  }
+
+/*--------------------------------------------------------- 
+# 10 years in the *info container* made you helpful to the user!
+---------------------------------------------------------*/
+.info_container{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: red;
+}
+
+.location_date_container{
+  display: flex;
+  margin-left: 2em;
+}
+
+.date{
+  margin-left: 2em;
 }

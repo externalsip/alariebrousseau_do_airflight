@@ -6,6 +6,7 @@ nav {
   background-color: var(--bs-primary);
   height: 15%;
   min-height: 120px;
+  max-height: 120px;
 }
 
 .logo {
