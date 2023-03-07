@@ -94,13 +94,17 @@ nav {
 # 10 years on the canvas made you into a beautiful piece of art!
 ---------------------------------------------------------*/
 .art{
-  max-width: 100%;
+  max-width: 150%;
   position: relative;
+  object-position: 50% 50%;
   z-index: -1;
 }
 
+.art_div{
+  max-width: 100%;
+}
+
 .art_title{
-  margin-top: 3em;
   font-size: 34px;
   padding: 20px;
   padding-bottom: 0px;
@@ -112,7 +116,7 @@ nav {
 .info_container{
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  background-color: var(--bs-white);
+  background-color: var(--bs-red);
 }
 
 .location_date_container{
