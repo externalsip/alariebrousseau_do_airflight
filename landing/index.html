@@ -14,7 +14,42 @@
 <body data-bs-target="#nav" data-bs-spy="scroll">
 <header>
 </header>
-<main><section class="navbar fixed-top">
+<main>
+
+<!-- 
+///////////////////////////////////////////////
+    Modale
+///////////////////////////////////////////////
+-->
+
+    <div class="modal fade subscribe-modal" id="subscribe" tabindex="-1" aria-labelledby="#subscribeLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="subscribeLabel">Restez informé!</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form>
+            <div class="modal-body">
+                <i class="bi bi-envelope d-inline"></i>
+                <input type="email" placeholder="Votre adresse courriel" class="email d-inline">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                <input type="submit" class="btn btn-secondary">
+            </div>
+        </form>
+          </div>
+        </div>
+      </div>
+
+<!-- 
+///////////////////////////////////////////////
+    Navbar 
+///////////////////////////////////////////////
+-->
+
+    <section class="navbar fixed-top">
 <nav id="nav" class="navbar navbar-light navbar-expand-lg">
     <div class="container-fluid">        
         <a class="navbar-brand" href="#">
@@ -42,11 +77,22 @@
                 <li class="nav-item">
                     <a href="#scrollspyHeading4" class="nav-link btn btn-lg nav-btn">FAQ</a>
                 </li>
+                <li class="nav-item">
+                    <a href="#scrollspyHeading5" class="nav-link btn btn-lg nav-btn">Infolettre</a>
+                </li>
             </ul>
         </div>
     </div>
 </nav>    
-</section><section class="hero">
+</section>
+
+<!-- 
+///////////////////////////////////////////////
+    Héro
+///////////////////////////////////////////////
+-->
+
+<section class="hero">
 <div id="scrollspyHeading1" class="container pt-5 pb-4">
         <div class="row">
             <div class="col-12 col-lg-6 app-text">
@@ -67,6 +113,13 @@
         </div>
     </div>
 </section>
+
+<!-- 
+///////////////////////////////////////////////
+    Fonctionnalitées
+///////////////////////////////////////////////
+-->
+
 <section class="fonctionnalitees">
     <div id="scrollspyHeading2" class="container pt-5">
          <div class="row justify-content-center">
@@ -340,7 +393,7 @@
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faq">
                 <div class="accordion-body">
-                    Oui, tout à fait ! Vous pouvez utiliser l'appli gratuitement. Si vous souhaitez les fonctionnalités premium, alors dans ce cas vous avec 2 forfaits paants supplémentaires. Veuillez-vous référer à la section Tarifs de cette page pour en savoir plus.
+                    Oui, tout à fait ! Vous pouvez utiliser l'appli gratuitement. Si vous souhaitez les fonctionnalités premium, alors dans ce cas vous avec 2 forfaits payants supplémentaires. Veuillez-vous référer à la section Tarifs de cette page pour en savoir plus.
                 </div>
               </div>
             </div>
@@ -381,10 +434,42 @@
                 </div>
               </div>
           </div>
-        </div>
 </section>
 
+<!-- 
+///////////////////////////////////////////////
+    Infolettre
+///////////////////////////////////////////////
+-->
 
+<section class="infolettre p-5">
+    <div id="scrollspyHeading5" class="container p-5 infolettre-section">
+         <div class="row justify-content-center">
+            <div class="col-12 infolettre-text">
+                <h1 class="fonction_titre h2">Infolettre</h1>
+                <p class="description h3">Abonnez-vous à notre infolettre pour recevoir des nouvelles sur les mises-à-jours et nouvelles fonctionnalitées de l'appli
+                en plus de recevoir en primeur les détails des prochaines éditions du festival.
+            </p>
+            </div>
+            <br>
+            <br> 
+        </div>
+
+        <div class="row justify-content-end">           
+        <div class="col-12 col-md-6">
+            <button class="btn btn-primary infolettre-button" data-bs-toggle="modal" data-bs-target="#subscribe">Je m'abonne</button>
+        </div>
+        </div>
+        </div>
+        </div>
+          </div>
+</section>
+
+<!-- 
+///////////////////////////////////////////////
+    Footer
+///////////////////////////////////////////////
+-->
 
 <section class="footer">
     <div class="container p-3">

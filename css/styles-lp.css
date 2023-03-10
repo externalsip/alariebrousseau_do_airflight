@@ -31,6 +31,7 @@ nav {
 
 .btn:hover {
   background-color: var(--bs-dark);
+  color:var(--bs-white);
 }
 
 .btn.active{
@@ -158,6 +159,58 @@ section.fonctionnalitees{
 }
 
 /*--------------------------------------------------------- 
+# FAQ
+---------------------------------------------------------*/
+
+section.faq{
+  height:90%;
+  background-color: var(--bs-light);
+  padding-bottom: 5%;
+}
+
+.accordion{
+  width: 80%;
+}
+
+.accordion-body{
+  background-color: var(--bs-primary);
+}
+
+.accordion-item:focus{
+  background-color: var(--bs-secondary);
+}
+
+/*--------------------------------------------------------- 
+# Infolettre
+---------------------------------------------------------*/
+
+.infolettre-button{
+  width:100%;
+}
+
+section.infolettre{
+  height:90%;
+}
+
+.infolettre-text{
+  background-color: rgba(var(--bs-light-rgb), 0.5);
+}
+
+.infolettre-section{
+  background-image: url('../assets/image-background-infolettre.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  /*https://unsplash.com/photos/ICCn56-jyuw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink*/
+  border-radius: 25px;
+}
+
+.email{
+  width:80%;
+  border-radius:15px;
+  border:solid 1px rgba(var(--bs-dark))
+}
+
+/*--------------------------------------------------------- 
 # Footer
 ---------------------------------------------------------*/
 
@@ -211,18 +264,7 @@ a:last-child:hover{
 }
 
 
-/*--------------------------------------------------------- 
-# FAQ
----------------------------------------------------------*/
 
-section.faq{
-  height:90%;
-  background-color: var(--bs-light);
-}
-
-.accordion-body{
-  background-color: var(--bs-primary);
-}
 
 /*--------------------------------------------------------- 
 # Global

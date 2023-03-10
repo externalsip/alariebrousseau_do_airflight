@@ -1,0 +1,220 @@
+/*--------------------------------------------------------- 
+# Nav
+---------------------------------------------------------*/
+
+nav {
+  background-color: #8b95c900;
+  height: 15%;
+  min-height: 120px;
+  max-height: 120px;
+}
+
+.logo {
+  height: 75px;
+}
+
+.like {
+  height: 75px;
+  width: 75px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  margin-right: 5%;
+  background-position: center;
+  background-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bi-heart{
+  font-size: 32px;
+  color: var(--bs-red);
+}
+
+.navbar-toggler {
+  height: 65px;
+  width: 65px;
+  border-style: none;
+  margin-left: 5%;
+  background-color: var(--gray);
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-brand {
+  margin: 0px;
+}
+
+.bi-chevron-left {
+  color: black;
+  align-self: center;
+}
+
+.navbar_flex {
+  display: flex;
+  justify-content: center;
+}
+
+/*--------------------------------------------------------- 
+# Footer
+---------------------------------------------------------*/
+
+.footer {
+  background-color: var(--bs-dark);
+  height: 25vh;
+  color: white;
+  padding: 1em;
+  display: none;
+}
+
+.tim_svg {
+  height: 5vh;
+}
+
+.footer_text {
+  max-width: 20em;
+  margin: 0px;
+}
+
+.tim_svg_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+}
+
+.footer_text_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*--------------------------------------------------------- 
+# 10 years on the canvas made you into a beautiful piece of art!
+---------------------------------------------------------*/
+body{
+  background-image: url("../assets/artworks/virtualanatomy1.jpg");
+  padding-top:45%;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+.art{
+  max-width: 100%;
+  object-position: 50% 50%;
+
+}
+
+.art_div{
+  max-width: 100%;
+}
+
+.art_title{
+  font-size: 34px;
+  padding: 20px;
+  padding-bottom: 0px;
+  }
+
+/*--------------------------------------------------------- 
+# 10 years in the *info container* made you helpful to the user!
+---------------------------------------------------------*/
+.info_container{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: var(--bs-red);
+
+}
+
+.location_date_container{
+  display: flex;
+  margin-left: 1em;
+}
+
+.date{
+  margin-left: 2em;
+}
+
+.artist_title_div{
+  margin-top: 1em ;
+  margin: 0px 1em 0px 1em;
+  padding: 0.3em;
+  background-color: var(--bs-dark);
+  border-radius: 5px;
+}
+
+.artist_title{
+  margin-left: 0.5em;
+  margin-bottom: 0.15em;
+  color: white;
+}
+
+.card_info_div{
+  margin: 0.6em 1em 0.6em 1em;
+  height: 25em;
+}
+
+.art_info_div{
+  margin: 0.6em 1em 0.6em 1em;
+  height: 5em;
+}
+
+.savoir_plus_btn{
+  width: 8em;
+  height: 2.2em;
+  border-style: solid;
+  border-color: var(--bs-info);
+  border-radius: 5px;
+  background-color: var(--bs-white);
+  transition-duration: 0.25s;
+  margin: 1em 0px 0px 0.5em;
+  
+}
+
+.savoir_plus_btn:hover{
+  border: 3px solid var(--bs-dark);
+  background-color: var(--bs-dark);
+  color: var(--bs-white);
+  transition-duration: 0.25s;
+}
+
+.artist_face{
+  width: 100%;
+  height: 12em;
+  object-fit: cover;
+  box-shadow: 0px 7px 9px 0px rgba(0,0,0,0.3)
+}
+
+.artist_name{
+  margin: 0.2em 0px 0px 0.3em;
+  font-size: 24px;
+}
+
+.artist_description{
+  margin: 0px 0.5em 0px 0.5em;
+}
+
+/*--------------------------------------------------------- 
+# 10 years in the accordion container made you compressed!
+---------------------------------------------------------*/
+.accordion{
+  margin: 0em 1em 0em 1em;
+}
+
+.accordion-button.collapsed{
+  font-family: var(--bs-body-font-family);
+  background-color: var(--bs-dark);
+  color: var(--bs-white);
+}
+
+.btn_send{
+  margin-top: 0.5em;
+}
+
+.label_name{
+  margin-bottom: 0.5em;
+}
+
+input{
+  margin-bottom: 0.5em;
+}
