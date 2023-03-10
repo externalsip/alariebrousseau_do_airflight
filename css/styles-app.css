@@ -58,7 +58,6 @@ nav {
   height: 25vh;
   color: white;
   padding: 1em;
-  display: none;
 }
 
 .tim_svg {
@@ -68,6 +67,7 @@ nav {
 .footer_text {
   max-width: 20em;
   margin: 0px;
+  text-align: center;
 }
 
 .tim_svg_div {

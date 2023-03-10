@@ -30,7 +30,6 @@
             <span class="bi bi-chevron-left"></span>
           </button>
 
-
           <div class="like">
             <i class="bi bi-heart"> </i>
           </div>
@@ -39,90 +38,164 @@
     </header>
 
     <main>
-
-      <div class="info_container">      
-
+      <div class="info_container">
+        <!-- Title + artist info -->
         <h1 class="art_title">Title Here</h1>
         <div class="location_date_container">
-          <h6 class="location_date location"> <i class="bi bi-geo-alt"></i> Deep Space 8K</h6>
-          <h6 class="location_date date"> <i class="bi bi-calendar3"></i> 24 décembre 2023</h6>
+          <h6 class="location_date location">
+            <i class="bi bi-geo-alt"></i> Deep Space 8K
+          </h6>
+          <h6 class="location_date date">
+            <i class="bi bi-calendar3"></i> 24 décembre 2023
+          </h6>
         </div>
         <div class="col info_cards">
-
           <div class="card-body">
             <div class="artist_title_div">
-            <h5 class="card-title artist_title">Artiste.s</h5>
-          </div>
+              <h5 class="card-title artist_title">Artiste.s</h5>
+            </div>
           </div>
           <div class="card card_info_div">
-          <div>
-            <img class="artist_face" src="../assets/artists/pog.PNG"/>
+            <div>
+              <img class="artist_face" src="../assets/artists/pog.PNG" />
+            </div>
+            <h2 class="artist_name">Jermy Elberson</h2>
+            <p class="artist_description">
+              Streamer man :D Streamer man :D Streamer man :D Streamer man
+              :DStreamer man :DStreamer man :DStreamer man :DStreamer man
+              :DStreamer man :DStreamer man :DStreamer man :DStreamer man
+              :DStreamer man :DStreamer man :DStreamer man :D
+            </p>
+            <button
+              class="savoir_plus_btn"
+              data-bs-toggle="modal"
+              data-bs-target="#artistInfo"
+            >
+              En savoir plus
+            </button>
           </div>
-          <h2 class="artist_name">Jermy Elberson</h2>
-          <p class="artist_description">Streamer man :D Streamer man :D Streamer man :D Streamer man :DStreamer man :DStreamer man :DStreamer man :DStreamer man :DStreamer man :DStreamer man :DStreamer man :DStreamer man :DStreamer man :DStreamer man :DStreamer man :D</p>
-          <button class="savoir_plus_btn"> En savoir plus</button>
-          </div>
-          </div>
+        </div>
 
-          <div class="col info_cards">
-
-            <div class="card-body">
-              <div class="artist_title_div">
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="artistInfo"
+          tabindex="-1"
+          aria-labelledby="artistInfoModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="artistInfoModalLabel">
+                  Artist Name
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                Jeremy Elbertson, also known as Jerma985 online is an american
+                streamer on the platform twitch.tv.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- a propos de l'oeuvre -->
+        <div class="col info_cards">
+          <div class="card-body">
+            <div class="artist_title_div">
               <h5 class="card-title artist_title">À propos de l'oeuvre</h5>
             </div>
-            </div>
-            <div class="card art_info_div">
-            <p class="artist_description"> Acrylique <br>
-              what <br>
-              what
+          </div>
+          <div class="card art_info_div">
+            <p class="artist_description">
+              Acrylique <br>
+              Line break <br>
+              Line break
             </p>
-            </div>
-            </div>      
-            <div class="accordion">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Réservez votre place
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-
-              <form>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label class="label_name" for="inputEmail4">Courriel</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="nom@example.com">
-    </div>
-  </div>
-  <div class="form-group">
-    <label class="label_name" for="inputName">Prénom</label>
-    <input type="text" class="form-control" id="inputName" placeholder="Prénom">
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label class="label_name" for="inputLastName">Nom</label>
-      <input type="text" class="form-control" id="inputLastName" placeholder="Nom">
-    </div>
-    <div class="form-group col-md-2">
-      <label class="label_name" for="inputDate">Date</label>
-      <input type="text" class="form-control" id="inputDate" placeholder="jj/mm/aaaa">
-    </div>
-  </div>
-  <button type="submit" class="btn btn-primary btn_send">Envoyer</button>
-</form>
-
+          </div>
+        </div>
+        <!-- accordeon (reserver) -->
+        <div class="accordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Réservez votre place
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label class="label_name" for="inputEmail4"
+                        >Courriel</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="inputEmail4"
+                        placeholder="nom@example.com"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="label_name" for="inputName">Prénom</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputName"
+                      placeholder="Prénom"
+                    />
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label class="label_name" for="inputLastName">Nom</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputLastName"
+                        placeholder="Nom"
+                      />
+                    </div>
+                    <div class="form-group col-md-2">
+                      <label class="label_name" for="inputDate">Date</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputDate"
+                        placeholder="jj/mm/aaaa"
+                      />
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn_send">
+                    Envoyer
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
-        </div>
-      </div>
-
-
 
       <!-- footer -->
-      <div class="container-fluid footer fixed-bottom">
+      <div class="container-fluid footer">
         <div
           class="row justify-content-center justify-content-sm-between align-items-xl-center"
         >
