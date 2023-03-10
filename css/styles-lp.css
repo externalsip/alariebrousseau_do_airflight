@@ -65,6 +65,7 @@ section.hero{
   aspect-ratio: 5/9;
   box-shadow: 0px 0px 38px 1px rgba(0, 0, 0, 0.25);
   text-align: center;
+  min-width:450px !important;
 }
 
 .download{
@@ -165,11 +166,10 @@ section.fonctionnalitees{
 section.faq{
   height:90%;
   background-color: var(--bs-light);
-  padding-bottom: 5%;
 }
 
 .accordion{
-  width: 80%;
+  width: 100%;
 }
 
 .accordion-body{
@@ -194,6 +194,7 @@ section.infolettre{
 
 .infolettre-text{
   background-color: rgba(var(--bs-light-rgb), 0.5);
+  border-radius: 25px;
 }
 
 .infolettre-section{
@@ -201,7 +202,7 @@ section.infolettre{
   background-repeat: no-repeat;
   background-size:cover;
   /*https://unsplash.com/photos/ICCn56-jyuw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink*/
-  border-radius: 25px;
+
 }
 
 .email{
