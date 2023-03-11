@@ -122,6 +122,80 @@ section.fonctionnalitees{
 }
 
 /*--------------------------------------------------------- 
+En voir plus
+---------------------------------------------------------*/
+
+@media all and (min-width:1200px){
+  .swiper-slide{
+  opacity: 0.4;
+}
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper {
+  width: 100%;
+  height: 700px;
+}
+.swiper-screenshots{
+  background-color: var(--bs-primary);
+}
+.swiper-slide-active{
+  opacity:1;
+}
+
+.swiper-slide{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 80%;
+  transition: transform 0.5s; 
+  transform:scale(0.8);
+}
+
+@media all and (max-width:1200px){
+  .swiper-slide{
+    opacity:0;
+  }
+  .swiper-slide-active{
+    opacity:1;
+  }
+}
+
+.swiper-slide-active img{
+  opacity:1;
+  transform:scale(1);
+}
+
+.swiper-btn{
+  background-color: var(--bs-secondary);
+  color:var(--bs-dark);
+  border-radius:50px;
+  width:60px;
+  height:60px;
+  position:absolute;
+}
+
+.swiper-btn:hover{
+  background-color: var(--bs-dark);
+  color:var(--bs-secondary);
+  border-radius:50px;
+  width:60px;
+  height:60px;
+}
+
+.swiper-btn:active{
+  transform:translateY(2px);
+}
+
+/*--------------------------------------------------------- 
 # Témoignages
 ---------------------------------------------------------*/
 

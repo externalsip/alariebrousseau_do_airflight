@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="noindex"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <title>ARS ELECTRONICA</title>
     <link href="css/main.css" rel="stylesheet">
     <link href="css/styles-lp.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body data-bs-target="#nav" data-bs-spy="scroll">
 <header>
@@ -72,13 +74,16 @@
                     <a href="#scrollspyHeading2" class="nav-link btn btn-lg nav-btn">Fonctionnalités</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#scrollspyHeading3" class="nav-link btn btn-lg nav-btn">Témoignages</a>
+                    <a href="#scrollspyHeading3" class="nav-link btn btn-lg nav-btn">En voir plus</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#scrollspyHeading4" class="nav-link btn btn-lg nav-btn">FAQ</a>
+                    <a href="#scrollspyHeading4" class="nav-link btn btn-lg nav-btn">Témoignages</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#scrollspyHeading5" class="nav-link btn btn-lg nav-btn">Infolettre</a>
+                    <a href="#scrollspyHeading5" class="nav-link btn btn-lg nav-btn">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#scrollspyHeading6" class="nav-link btn btn-lg nav-btn">Infolettre</a>
                 </li>
             </ul>
         </div>
@@ -225,6 +230,38 @@
     </div>
 </section>
 
+
+<!-- 
+///////////////////////////////////////////////
+    En voir plus
+///////////////////////////////////////////////
+-->
+
+<section class="seeMore py-5">
+    <div id="scrollspyHeading3" class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <h1 class="fonction_titre h2">Prévisualisez l'interface de l'app</h1>
+                </div>
+                
+            </div>
+              
+    </div>                
+  <div class="swiper swiper-screenshots">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="assets/user6.jpg" class="slider-img"></div>
+        <div class="swiper-slide"><img src="assets/user6.jpg" class="slider-img"></div>
+        <div class="swiper-slide"><img src="assets/user6.jpg" class="slider-img"></div>
+        <div class="swiper-slide"><img src="assets/user6.jpg" class="slider-img"></div>
+        <div class="swiper-slide"><img src="assets/user6.jpg" class="slider-img"></div>
+    </div>
+    <div class="swiper-button-prev swiper-btn sc-btn-prev"></div>
+    <div class="swiper-button-next swiper-btn sc-btn-next"></div>
+
+</div>
+</section>
+
+
 <!-- 
 ///////////////////////////////////////////////
     Témoignages 
@@ -232,7 +269,7 @@
 -->
 
 <section class="temoignages py-5">
-    <div id="scrollspyHeading3" class="container">
+    <div id="scrollspyHeading4" class="container">
          <div class="row justify-content-center">
             <div class="col-12">
                 <h1 class="fonction_titre h2">Témoignages</h1>
@@ -364,7 +401,7 @@
 -->
 
 <section class="faq py-5">
-    <div id="scrollspyHeading4" class="container">
+    <div id="scrollspyHeading5" class="container">
          <div class="row justify-content-center">
             <div class="col-12">
                 <h1 class="fonction_titre h2">Foire aux questions</h1>
@@ -433,7 +470,7 @@
 -->
 
 <section class="infolettre py-5 infolettre-section">
-    <div id="scrollspyHeading5" class="container">
+    <div id="scrollspyHeading6" class="container">
          <div class="row justify-content-end">
             <div class="infolettre-text col-12 col-lg-6">
                 <h1 class="fonction_titre h2">Infolettre</h1>
@@ -453,6 +490,9 @@
         </div>
           </div>
 </section>
+
+
+
 
 <!-- 
 ///////////////////////////////////////////////
@@ -491,6 +531,7 @@
 <footer></footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
