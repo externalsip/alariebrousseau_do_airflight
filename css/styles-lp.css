@@ -50,8 +50,8 @@ nav {
 
 section.hero{
   height: 90%;
-  margin-top: 10%;
   color: var(--bs-dark);
+  padding-top:20% !important;
 }
 
 .app-text {
@@ -98,7 +98,6 @@ section.fonctionnalitees{
   background-color: var(--bs-light);
   height: 100%;
   max-width: 100%;
-  margin-top: 7%;
 }
 
 .band {
@@ -130,6 +129,16 @@ section.fonctionnalitees{
   width:100%;
   height:25vh;
   object-fit: cover;
+  border-top-right-radius: var(--bs-border-radius);
+  border-top-left-radius: var(--bs-border-radius);
+}
+
+@media(max-width: 576px){
+  .user{
+    border-top-right-radius: 0;
+    border-bottom-left-radius: var(--bs-border-radius);
+    border-top-left-radius: var(--bs-border-radius);
+  }
 }
 
 .temoignages_band {
@@ -138,17 +147,52 @@ section.fonctionnalitees{
   background-color: var(--bs-secondary);
   position:absolute;
   top:10%;
+
 }
 .icon-temoignages{
   font-size: 2rem;
   color: var(--bs-secondary);
   position: absolute;
-  left:25%;
+  left:-25%;
   top:25%;
 }
 
 .user_review{
   max-height: 20%;
+}
+
+.witnessBody{
+  font-size: 16px;
+  color: var(--bs-dark);
+  line-height: 19px;
+  position:relative;
+}
+
+@media (min-width: 576px){
+  .userCard{
+    min-height: 100%;
+  }
+  .icon-temoignages{
+    top:-15%;
+    left:65%;
+  }
+  .temoignages_band{
+    display:none;
+  }
+}
+
+@media (min-width:768px){
+  .icon-temoignages{
+    top:-20%;
+    left:70%;
+  }
+}
+
+@media (min-width: 992px){
+  .icon-temoignages{
+    top:-15%;
+    left:65%;
+  }
 }
 
 .hide_link{
