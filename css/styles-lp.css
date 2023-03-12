@@ -154,19 +154,11 @@ En voir plus
 
 .swiper-slide img {
   display: block;
-  width: 100%;
   height: 80%;
+  aspect-ratio: 5/9;
+  border-radius:50px;
   transition: transform 0.5s; 
   transform:scale(0.8);
-}
-
-@media all and (max-width:1200px){
-  .swiper-slide{
-    opacity:0;
-  }
-  .swiper-slide-active{
-    opacity:1;
-  }
 }
 
 .swiper-slide-active img{
@@ -178,8 +170,7 @@ En voir plus
   background-color: var(--bs-secondary);
   color:var(--bs-dark);
   border-radius:50px;
-  width:60px;
-  height:60px;
+  padding:30px;
   position:absolute;
 }
 
@@ -187,8 +178,7 @@ En voir plus
   background-color: var(--bs-dark);
   color:var(--bs-secondary);
   border-radius:50px;
-  width:60px;
-  height:60px;
+  padding:30px;
 }
 
 .swiper-btn:active{

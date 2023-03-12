@@ -11,8 +11,13 @@ const swiper_screenshots = new Swiper('.swiper-screenshots', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    slidesPerView:3,
+    slidesPerView:1,
     spaceBetween: 50,
     loop: true,
-    centeredSlides: true,  
+    centeredSlides: true,
+    breakpoints: {
+        1200: {
+            slidesPerView:3,
+        }
+    }
   });
