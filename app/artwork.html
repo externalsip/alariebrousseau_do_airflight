@@ -13,7 +13,7 @@
     />
     <link href="../css/main.css" rel="stylesheet" />
     <link href="../css/styles-artwork.css" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
   </head>
 
   <body>
@@ -41,35 +41,34 @@
       <!-- Title + artist info -->
       <section>
         <div class="info_container">
-          <h1 class="art_title">Title Here</h1>
-          <div class="location_date_container">
-            <h6 class="location_date location">
+          <h1 class="art_title p-3 pb-0">Title Here</h1>
+          <div class="location_date_container mx-3 mb-1">
+            <h6 class="location_date">
               <i class="bi bi-geo-alt"></i> Deep Space 8K
             </h6>
-            <h6 class="location_date date">
+            <h6 class="location_date mx-4">
               <i class="bi bi-calendar3"></i> 24 décembre 2023
             </h6>
           </div>
           <div class="col info_cards">
             <div class="card-body">
-              <div class="artist_title_div">
+              <div class="artist_title_div mt-2 mx-3 p-2">
                 <h5 class="card-title artist_title">Artiste.s</h5>
               </div>
             </div>
-            <div class="card card_info_div">
+            <div class="card mt-2 m-3">
               <div>
                 <img class="artist_face" src="../assets/artists/pog.PNG" />
               </div>
-              <div class="card-body p-2">
-                <h2 class="artist_name">Jermy Elberson</h2>
+              <div class="card-body p-3 pb-2">
+                <h2 class="artist_name">Ars Electronica</h2>
                 <p class="artist_description">
-                  Streamer man :D Streamer man :D Streamer man :D Streamer man
-                  :DStreamer man :DStreamer man :DStreamer man :DStreamer man
-                  :DStreamer man :DStreamer man :DStreamer man :DStreamer man
-                  :DStreamer man :DStreamer man :DStreamer man :D
+                  Ars Electronica est une organisation basée à Linz, en
+                  Autriche, qui se consacre à la promotion de la création
+                  numérique depuis 1979.
                 </p>
                 <button
-                  class="savoir_plus_btn"
+                  class="savoir_plus_btn m-2"
                   data-bs-toggle="modal"
                   data-bs-target="#artistInfo"
                 >
@@ -94,7 +93,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h1 class="modal-title fs-5" id="artistInfoModalLabel">
-                  Artist Name
+                  Ars Electronica
                 </h1>
                 <button
                   type="button"
@@ -104,8 +103,7 @@
                 ></button>
               </div>
               <div class="modal-body">
-                Jeremy Elbertson, also known as Jerma985 online is an american
-                streamer on the platform twitch.tv.
+                Ars Electronica : Ars Electronica est un festival consacré aux rapports entre art, technologie et société. Le festival est réalisé depuis 1979 à Linz. Tout d'abord sous la forme d'une Biennale, le Festival a lieu tous les ans depuis 1986. C'est le plus important festival international d'art numérique, les tendances et les évolutions à long terme imaginent l'avenir sous la forme d'œuvres d'art, des forums de discussion et de soutien scientifique. Le premier directeur du festival jusqu'en 1995 était Peter Weibel.
               </div>
             </div>
           </div>
@@ -116,16 +114,16 @@
       <section>
         <div class="col info_cards">
           <div class="card-body">
-            <div class="artist_title_div">
+            <div class="artist_title_div mt-2 mx-3 p-2">
               <h5 class="card-title artist_title">À propos de l'oeuvre</h5>
             </div>
           </div>
-          <div class="card art_info_div">
+          <div class="card mt-2 m-3">
             <div class="card-body p-2">
-              <p class="artist_description">
-                Acrylique <br />
-                Line break <br />
-                Line break
+              <p class="artist_description mb-0">
+                Écrans <br />
+                Cables éléctriques<br />
+                Magie (soi-disant)
               </p>
             </div>
           </div>
@@ -134,7 +132,7 @@
 
       <section>
         <!-- accordeon pour reserver -->
-        <div class="accordion">
+        <div class="accordion my-3 mx-3">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
               <button
@@ -158,47 +156,53 @@
                 <form>
                   <div class="form-row">
                     <div class="form-group col-md-6">
-                      <label class="label_name" for="inputEmail4"
+                      <label class="label_name mb-2" for="inputEmail4"
                         >Courriel</label
                       >
                       <input
                         type="email"
-                        class="form-control"
+                        class="form-control mb-2"
                         id="inputEmail4"
                         placeholder="nom@example.com"
                       />
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="label_name" for="inputName">Prénom</label>
+                    <label class="label_name mb-2" for="inputName"
+                      >Prénom</label
+                    >
                     <input
                       type="text"
-                      class="form-control"
+                      class="form-control mb-2"
                       id="inputName"
                       placeholder="Prénom"
                     />
                   </div>
                   <div class="form-row">
                     <div class="form-group col-md-6">
-                      <label class="label_name" for="inputLastName">Nom</label>
+                      <label class="label_name mb-2" for="inputLastName"
+                        >Nom</label
+                      >
                       <input
                         type="text"
-                        class="form-control"
+                        class="form-control mb-2"
                         id="inputLastName"
                         placeholder="Nom"
                       />
                     </div>
                     <div class="form-group col-md-2">
-                      <label class="label_name" for="inputDate">Date</label>
+                      <label class="label_name mb-2" for="inputDate"
+                        >Date</label
+                      >
                       <input
                         type="text"
-                        class="form-control"
+                        class="form-control mb-2"
                         id="inputDate"
                         placeholder="jj/mm/aaaa"
                       />
                     </div>
                   </div>
-                  <button type="submit" class="btn btn-primary btn_send">
+                  <button type="submit" class="btn btn-primary btn_send mt-2">
                     Envoyer
                   </button>
                 </form>
@@ -220,7 +224,7 @@
                 582-424MO. UI de l'app créé par Quoc Huy Do
               </p>
             </div>
-            <div class="col-sm-6 col-12 tim_svg_div">
+            <div class="col-sm-6 col-12 tim_svg_div mb-0">
               <img
                 class="tim_svg"
                 src="https://tim-montmorency.com/timdoc/shared/images/logo-tim.svg"

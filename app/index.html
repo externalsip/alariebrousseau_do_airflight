@@ -111,39 +111,42 @@
             />
           </div>
           <!-- filters -->
-          <div class="row filters px-3 pb-1 swiper-filter">
+          <div class="row filters px-3 pb-1 swiper-filters">
             <div class="px-0 swiper-wrapper">
-            <ul class="m-0 px-0">
-              <li class="swiper-slide">
+              <div class="swiper-slide btn_filter">
                 <button
                   class="btn btn-outline-success active"
                   data-bs-toggle="button"
                 >
                   Toutes
                 </button>
-              </li>
-              <li class="swiper-slide">
+              </div>
+              <div class="swiper-slide btn_filter">
                 <button class="btn btn-outline-success" data-bs-toggle="button">
                   Installations intéractives
                 </button>
-              </li>
-              <li class="swiper-slide">
+              </div>
+              <div class="swiper-slide btn_filter">
                 <button class="btn btn-outline-success" data-bs-toggle="button">
                   Concert
                 </button>
-              </li>
-              <li class="swiper-slide">
+              </div>
+              <div class="swiper-slide btn_filter">
                 <button class="btn btn-outline-success" data-bs-toggle="button">
                   Performances
                 </button>
-              </li>
-              <li class="swiper-slide">
+              </div>
+              <div class="swiper-slide btn_filter">
                 <button class="btn btn-outline-success" data-bs-toggle="button">
                   AR / VR
                 </button>
-              </li>
-            </ul>
-            <div class="swiper-pagination"></div>
+              </div>
+              <div class="swiper-slide btn_filter">
+                <button class="btn btn-outline-success" data-bs-toggle="button">
+                  Projections / Immersion
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -151,100 +154,199 @@
       <section class="vedette_section px-3">
         <h2 class="vedette_text pt-2">En vedette</h2>
         <div class="row gx-0" id="top_cards">
-          <div class="col card_col">
-            <a href="../app/artwork.html" class="card art px-2 pt-2">
-              <img
-                src="../assets/artworks/virtualanatomy1.jpg"
-                class="card-img-top featured_art_img"
-              />
-              <div class="card-body pt-2 px-0 pb-0">
-                <h5 class="card-title">Virtual Anatomy</h5>
-                <h6 class="card-title">Par Ars Electronica</h6>
-                <div class="time_date_div">
-                  <h6 class="card-title time_date">
-                    <i class="bi bi-calendar3"></i> 24 décembre 2023
-                  </h6>
-                  <h6 class="card-title time_date time">
-                    <i class="bi bi-clock"></i> 12h
-                  </h6>
-                </div>
-                <div class="card_info_div">
-                  <div>
-                    <img
-                      src="../assets/logo_icon.png"
-                      class="artist_avatar card_info"
-                    />
+          <div class="swiper-featured-artworks">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="../app/artwork.html" class="card art px-2 pt-2">
+                  <img
+                    src="../assets/artworks/virtualanatomy1.jpg"
+                    class="card-img-top featured_art_img"
+                  />
+                  <div class="card-body pt-2 px-0 pb-0">
+                    <h5 class="card-title">Virtual Anatomy</h5>
+                    <h6 class="card-title">Par Ars Electronica</h6>
+                    <div class="time_date_div">
+                      <h6 class="card-title time_date">
+                        <i class="bi bi-calendar3"></i> 24 décembre 2023
+                      </h6>
+                      <h6 class="card-title time_date time">
+                        <i class="bi bi-clock"></i> 12h
+                      </h6>
+                    </div>
+                    <div class="card_info_div">
+                      <div>
+                        <img
+                          src="../assets/logo_icon.png"
+                          class="artist_avatar card_info"
+                        />
+                      </div>
+                      <h6 class="card-title card_info_text">
+                        Plus d'info <i class="bi bi-chevron-right"></i>
+                      </h6>
+                    </div>
                   </div>
-                  <h6 class="card-title card_info_text">
-                    Plus d'info <i class="bi bi-chevron-right"></i>
-                  </h6>
-                </div>
+                </a>
               </div>
-            </a>
-          </div>
 
-          <div class="col card_col">
-            <a href="../app/artwork.html" class="card art px-2 pt-2">
-              <img
-                src="../assets/artworks/contact.png"
-                class="card-img-top featured_art_img"
-              />
-              <div class="card-body pt-2 px-0 pb-0">
-                <h5 class="card-title">Contact</h5>
-                <h6 class="card-title">Par Plusieurs artistes</h6>
-                <div class="time_date_div">
-                  <h6 class="card-title time_date">
-                    <i class="bi bi-calendar3"></i> 24 décembre 2023
-                  </h6>
-                  <h6 class="card-title time_date time">
-                    <i class="bi bi-clock"></i> 12h
-                  </h6>
-                </div>
-                <div class="card_info_div">
-                  <div>
-                    <img
-                      src="../assets/artists/emanuel_gollob.png"
-                      class="artist_avatar card_info"
-                    />
+              <div class="swiper-slide">
+                <a href="../app/artwork.html" class="card art px-2 pt-2">
+                  <img
+                    src="../assets/artworks/contact.png"
+                    class="card-img-top featured_art_img"
+                  />
+                  <div class="card-body pt-2 px-0 pb-0">
+                    <h5 class="card-title">Contact</h5>
+                    <h6 class="card-title">Par Plusieurs artistes</h6>
+                    <div class="time_date_div">
+                      <h6 class="card-title time_date">
+                        <i class="bi bi-calendar3"></i> 24 décembre 2023
+                      </h6>
+                      <h6 class="card-title time_date time">
+                        <i class="bi bi-clock"></i> 12h
+                      </h6>
+                    </div>
+                    <div class="card_info_div">
+                      <div>
+                        <img
+                          src="../assets/artists/emanuel_gollob.png"
+                          class="artist_avatar card_info"
+                        />
+                      </div>
+                      <h6 class="card-title card_info_text">
+                        Plus d'info <i class="bi bi-chevron-right"></i>
+                      </h6>
+                    </div>
                   </div>
-                  <h6 class="card-title card_info_text">
-                    Plus d'info <i class="bi bi-chevron-right"></i>
-                  </h6>
-                </div>
+                </a>
               </div>
-            </a>
-          </div>
 
-          <div class="col card_col">
-            <a href="../app/artwork.html" class="card art px-2 pt-2">
-              <img
-                src="../assets/artworks/edible_earth.jpg"
-                class="card-img-top featured_art_img"
-              />
-              <div class="card-body pt-2 px-0 pb-0">
-                <h5 class="card-title">Edible Earth</h5>
-                <h6 class="card-title">Par masharu</h6>
-                <div class="time_date_div">
-                  <h6 class="card-title time_date">
-                    <i class="bi bi-calendar3"></i> 24 décembre 2023
-                  </h6>
-                  <h6 class="card-title time_date time">
-                    <i class="bi bi-clock"></i> 12h
-                  </h6>
-                </div>
-                <div class="card_info_div">
-                  <div>
-                    <img
-                      src="../assets/artists/masharu.png"
-                      class="artist_avatar card_info"
-                    />
+              <div class="swiper-slide">
+                <a href="../app/artwork.html" class="card art px-2 pt-2">
+                  <img
+                    src="../assets/artworks/edible_earth.jpg"
+                    class="card-img-top featured_art_img"
+                  />
+                  <div class="card-body pt-2 px-0 pb-0">
+                    <h5 class="card-title">Edible Earth</h5>
+                    <h6 class="card-title">Par masharu</h6>
+                    <div class="time_date_div">
+                      <h6 class="card-title time_date">
+                        <i class="bi bi-calendar3"></i> 24 décembre 2023
+                      </h6>
+                      <h6 class="card-title time_date time">
+                        <i class="bi bi-clock"></i> 12h
+                      </h6>
+                    </div>
+                    <div class="card_info_div">
+                      <div>
+                        <img
+                          src="../assets/artists/masharu.png"
+                          class="artist_avatar card_info"
+                        />
+                      </div>
+                      <h6 class="card-title card_info_text">
+                        Plus d'info <i class="bi bi-chevron-right"></i>
+                      </h6>
+                    </div>
                   </div>
-                  <h6 class="card-title card_info_text">
-                    Plus d'info <i class="bi bi-chevron-right"></i>
-                  </h6>
-                </div>
+                </a>
               </div>
-            </a>
+              <div class="swiper-slide">
+                <a href="../app/artwork.html" class="card art px-2 pt-2">
+                  <img
+                    src="../assets/artworks/virtualanatomy1.jpg"
+                    class="card-img-top featured_art_img"
+                  />
+                  <div class="card-body pt-2 px-0 pb-0">
+                    <h5 class="card-title">Virtual Anatomy</h5>
+                    <h6 class="card-title">Par Ars Electronica</h6>
+                    <div class="time_date_div">
+                      <h6 class="card-title time_date">
+                        <i class="bi bi-calendar3"></i> 24 décembre 2023
+                      </h6>
+                      <h6 class="card-title time_date time">
+                        <i class="bi bi-clock"></i> 12h
+                      </h6>
+                    </div>
+                    <div class="card_info_div">
+                      <div>
+                        <img
+                          src="../assets/logo_icon.png"
+                          class="artist_avatar card_info"
+                        />
+                      </div>
+                      <h6 class="card-title card_info_text">
+                        Plus d'info <i class="bi bi-chevron-right"></i>
+                      </h6>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a href="../app/artwork.html" class="card art px-2 pt-2">
+                  <img
+                    src="../assets/artworks/contact.png"
+                    class="card-img-top featured_art_img"
+                  />
+                  <div class="card-body pt-2 px-0 pb-0">
+                    <h5 class="card-title">Contact</h5>
+                    <h6 class="card-title">Par Plusieurs artistes</h6>
+                    <div class="time_date_div">
+                      <h6 class="card-title time_date">
+                        <i class="bi bi-calendar3"></i> 24 décembre 2023
+                      </h6>
+                      <h6 class="card-title time_date time">
+                        <i class="bi bi-clock"></i> 12h
+                      </h6>
+                    </div>
+                    <div class="card_info_div">
+                      <div>
+                        <img
+                          src="../assets/artists/emanuel_gollob.png"
+                          class="artist_avatar card_info"
+                        />
+                      </div>
+                      <h6 class="card-title card_info_text">
+                        Plus d'info <i class="bi bi-chevron-right"></i>
+                      </h6>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a href="../app/artwork.html" class="card art px-2 pt-2">
+                  <img
+                    src="../assets/artworks/edible_earth.jpg"
+                    class="card-img-top featured_art_img"
+                  />
+                  <div class="card-body pt-2 px-0 pb-0">
+                    <h5 class="card-title">Edible Earth</h5>
+                    <h6 class="card-title">Par masharu</h6>
+                    <div class="time_date_div">
+                      <h6 class="card-title time_date">
+                        <i class="bi bi-calendar3"></i> 24 décembre 2023
+                      </h6>
+                      <h6 class="card-title time_date time">
+                        <i class="bi bi-clock"></i> 12h
+                      </h6>
+                    </div>
+                    <div class="card_info_div">
+                      <div>
+                        <img
+                          src="../assets/artists/masharu.png"
+                          class="artist_avatar card_info"
+                        />
+                      </div>
+                      <h6 class="card-title card_info_text">
+                        Plus d'info <i class="bi bi-chevron-right"></i>
+                      </h6>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

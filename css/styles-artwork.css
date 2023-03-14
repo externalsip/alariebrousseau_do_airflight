@@ -91,7 +91,7 @@ nav {
 }
 
 /*--------------------------------------------------------- 
-# 10 years on the canvas made you into a beautiful piece of art!
+# ART
 ---------------------------------------------------------*/
 body {
   background-image: url("../assets/artworks/virtualanatomy1.jpg");
@@ -111,12 +111,10 @@ body {
 
 .art_title {
   font-size: 34px;
-  padding: 20px;
-  padding-bottom: 0px;
 }
 
 /*--------------------------------------------------------- 
-# 10 years in the *info container* made you helpful to the user!
+# INFO
 ---------------------------------------------------------*/
 .info_container {
   border-top-left-radius: 15px;
@@ -126,33 +124,16 @@ body {
 
 .location_date_container {
   display: flex;
-  margin-left: 1em;
-}
-
-.date {
-  margin-left: 2em;
 }
 
 .artist_title_div {
   margin-top: 1em;
-  margin: 0px 1em 0px 1em;
-  padding: 0.3em;
   background-color: var(--bs-dark);
   border-radius: 5px;
 }
 
 .artist_title {
-  margin-left: 0.5em;
-  margin-bottom: 0.15em;
   color: white;
-}
-
-.card_info_div {
-  margin: 0.6em 1em 0.6em 1em;
-}
-
-.art_info_div {
-  margin: 0.6em 1em 0.6em 1em;
 }
 
 .savoir_plus_btn {
@@ -163,7 +144,6 @@ body {
   border-radius: 5px;
   background-color: var(--bs-white);
   transition-duration: 0.25s;
-  margin: 1em 0px 0px 0.5em;
 }
 
 .savoir_plus_btn:hover {
@@ -183,43 +163,21 @@ body {
 }
 
 .artist_name {
-  margin: 0.6em 0px 0px 0.3em;
   font-size: 24px;
 }
 
-.artist_description {
-  margin: 0px 0.5em 0px 0.5em;
-}
-
 /*--------------------------------------------------------- 
-# 10 years in the accordion container made you compressed!
+# ACCORDION
 ---------------------------------------------------------*/
-.accordion {
-  margin: 0em 1em 1em 1em;
-}
 
 .accordion-button.collapsed {
   font-family: var(--bs-body-font-family);
   background-color: var(--bs-dark);
   color: var(--bs-white);
-  padding-left: 10px;
-}
-
-.btn_send {
-  margin-top: 0.5em;
-}
-
-.label_name {
-  margin-bottom: 0.5em;
-}
-
-input {
-  margin-bottom: 0.5em;
 }
 
 .accordion-button:not(.collapsed) {
   background-color: var(--bs-info);
   color: var(--bs-white);
   font-family: var(--bs-body-font-family);
-  padding-left: 10px;
 }

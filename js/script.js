@@ -21,13 +21,16 @@ const swiper_screenshots = new Swiper(".swiper-screenshots", {
   },
 });
 
-var swiper_filters = new Swiper(".swiper-filter", {
+var swiper_filters = new Swiper(".swiper-filters", {
+  direction: "horizontal",
+  slidesPerView: "auto",
+  freeMode: true,
+  spaceBetween: 10,
+});
+
+var swiper_filters = new Swiper(".swiper-featured-artworks", {
   direction: "horizontal",
   slidesPerView: 3,
-  spaceBetween: 30,
   freeMode: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+  spaceBetween: 180,
 });

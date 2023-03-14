@@ -109,8 +109,8 @@ nav {
   min-width: 720px;
 }
 
-.swiper-slide {
-  height: 42px;
+.btn_filter {
+  width: auto;
 }
 
 li {
@@ -211,7 +211,7 @@ body {
 }
 
 #top_cards {
-  width: 140%;
+  overflow: hidden;
 }
 
 /*--------------------------------------------------------- 
@@ -238,4 +238,11 @@ body {
   border-bottom-left-radius: var(--bs-card-inner-border-radius);
   border-bottom-right-radius: var(--bs-card-inner-border-radius);
   box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.3);
+}
+
+/*--------------------------------------------------------- 
+# Swipa
+---------------------------------------------------------*/
+.swiper-slide {
+  width: auto;
 }
