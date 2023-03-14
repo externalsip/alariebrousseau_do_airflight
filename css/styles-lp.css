@@ -140,7 +140,7 @@ En voir plus
   height: 700px;
 }
 .swiper-screenshots{
-  background-color: var(--bs-primary);
+  background-color: var(--bs-info);
 }
 .swiper-slide-active{
   opacity:1;
@@ -155,7 +155,7 @@ En voir plus
 .swiper-slide img {
   display: block;
   height: 80%;
-  aspect-ratio: 5/9;
+
   border-radius:50px;
   transition: transform 0.5s; 
   transform:scale(0.8);
@@ -188,6 +188,9 @@ En voir plus
 /*--------------------------------------------------------- 
 # Témoignages
 ---------------------------------------------------------*/
+.temoignages{
+  background-color: var(--bs-light);
+}
 
 .user{
   width:100%;
@@ -273,7 +276,6 @@ En voir plus
 
 section.faq{
   height:90%;
-  background-color: var(--bs-light);
 }
 
 .accordion{
