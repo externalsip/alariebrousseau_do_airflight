@@ -9,11 +9,15 @@
     <link rel="stylesheet" href="../css/bootstrap.css" />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
     <link href="../css/main.css" rel="stylesheet" />
     <link href="../css/styles-app.css" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
   </head>
 
   <body>
@@ -93,182 +97,170 @@
       <section class="searchbar_section">
         <div class="container align-items-center searchbar_group">
           <div class="input-group mb-3">
-            <div class="input-group-prepend">
+            <div class="input-group-prepend search_icon">
               <button class="btn btn-outline-secondary" type="button">
                 <i class="bi-search"></i>
               </button>
             </div>
             <input
               type="text"
-              class="form-control"
+              class="form-control mx-1"
               placeholder="Rechercher une oeuvre, un artiste..."
               aria-label=""
               aria-describedby="basic-addon1"
             />
           </div>
           <!-- filters -->
-          <div class="row filters">
-            <div>
-              <ul>
-                <li>
-                  <button
-                    class="btn btn-outline-success active"
-                    data-bs-toggle="button"
-                  >
-                    Toutes
-                  </button>
-                </li>
-                <li>
-                  <button
-                    class="btn btn-outline-success"
-                    data-bs-toggle="button"
-                  >
-                    Installations intéractives
-                  </button>
-                </li>
-                <li>
-                  <button
-                    class="btn btn-outline-success"
-                    data-bs-toggle="button"
-                  >
-                    Concert
-                  </button>
-                </li>
-                <li>
-                  <button
-                    class="btn btn-outline-success"
-                    data-bs-toggle="button"
-                  >
-                    Performances
-                  </button>
-                </li>
-                <li>
-                  <button
-                    class="btn btn-outline-success"
-                    data-bs-toggle="button"
-                  >
-                    AR / VR
-                  </button>
-                </li>
-              </ul>
-            </div>
+          <div class="row filters px-3 pb-1 swiper-filter">
+            <div class="px-0 swiper-wrapper">
+            <ul class="m-0 px-0">
+              <li class="swiper-slide">
+                <button
+                  class="btn btn-outline-success active"
+                  data-bs-toggle="button"
+                >
+                  Toutes
+                </button>
+              </li>
+              <li class="swiper-slide">
+                <button class="btn btn-outline-success" data-bs-toggle="button">
+                  Installations intéractives
+                </button>
+              </li>
+              <li class="swiper-slide">
+                <button class="btn btn-outline-success" data-bs-toggle="button">
+                  Concert
+                </button>
+              </li>
+              <li class="swiper-slide">
+                <button class="btn btn-outline-success" data-bs-toggle="button">
+                  Performances
+                </button>
+              </li>
+              <li class="swiper-slide">
+                <button class="btn btn-outline-success" data-bs-toggle="button">
+                  AR / VR
+                </button>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
-          <!-- art row -->
-          <section class="vedette_section">
-          <h2 class="vedette_text">En vedette</h2>
-          <div class="row gx-0" id="top_cards">
-            <div class="col card_col">
-              <a href="../app/artwork.html" class="card art">
-                <img
-                  src="../assets/artworks/virtualanatomy1.jpg"
-                  class="card-img-top featured_art_img"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Virtual Anatomy</h5>
-                  <h6 class="card-title">Par Ars Electronica</h6>
-                  <div class="time_date_div">
-                    <h6 class="card-title time_date">
-                      <i class="bi bi-calendar3"></i> 24 décembre 2023
-                    </h6>
-                    <h6 class="card-title time_date time">
-                      <i class="bi bi-clock"></i> 12h
-                    </h6>
-                  </div>
-                  <div class="card_info_div">
-                    <div>
-                      <img
-                        src="../assets/logo_icon.png"
-                        class="artist_avatar card_info"
-                      />
-                    </div>
-                    <h6 class="card-title card_info_text">
-                      Plus d'info <i class="bi bi-chevron-right"></i>
-                    </h6>
-                  </div>
+      <!-- art row -->
+      <section class="vedette_section px-3">
+        <h2 class="vedette_text pt-2">En vedette</h2>
+        <div class="row gx-0" id="top_cards">
+          <div class="col card_col">
+            <a href="../app/artwork.html" class="card art px-2 pt-2">
+              <img
+                src="../assets/artworks/virtualanatomy1.jpg"
+                class="card-img-top featured_art_img"
+              />
+              <div class="card-body pt-2 px-0 pb-0">
+                <h5 class="card-title">Virtual Anatomy</h5>
+                <h6 class="card-title">Par Ars Electronica</h6>
+                <div class="time_date_div">
+                  <h6 class="card-title time_date">
+                    <i class="bi bi-calendar3"></i> 24 décembre 2023
+                  </h6>
+                  <h6 class="card-title time_date time">
+                    <i class="bi bi-clock"></i> 12h
+                  </h6>
                 </div>
-              </a>
-            </div>
-
-            <div class="col card_col">
-              <a href="../app/artwork.html" class="card art">
-                <img
-                  src="../assets/artworks/contact.png"
-                  class="card-img-top featured_art_img"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Contact</h5>
-                  <h6 class="card-title">Par Emanuel Gollob & Magdalena May</h6>
-                  <div class="time_date_div">
-                    <h6 class="card-title time_date">
-                      <i class="bi bi-calendar3"></i> 24 décembre 2023
-                    </h6>
-                    <h6 class="card-title time_date time">
-                      <i class="bi bi-clock"></i> 12h
-                    </h6>
+                <div class="card_info_div">
+                  <div>
+                    <img
+                      src="../assets/logo_icon.png"
+                      class="artist_avatar card_info"
+                    />
                   </div>
-                  <div class="card_info_div">
-                    <div>
-                      <img
-                        src="../assets/artists/emanuel_gollob.png"
-                        class="artist_avatar card_info"
-                      />
-                    </div>
-                    <h6 class="card-title card_info_text">
-                      Plus d'info <i class="bi bi-chevron-right"></i>
-                    </h6>
-                  </div>
+                  <h6 class="card-title card_info_text">
+                    Plus d'info <i class="bi bi-chevron-right"></i>
+                  </h6>
                 </div>
-              </a>
-            </div>
-
-            <div class="col card_col">
-              <a href="../app/artwork.html" class="card art">
-                <img
-                  src="../assets/artworks/edible_earth.jpg"
-                  class="card-img-top featured_art_img"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Edible Earth</h5>
-                  <h6 class="card-title">Par masharu</h6>
-                  <div class="time_date_div">
-                    <h6 class="card-title time_date">
-                      <i class="bi bi-calendar3"></i> 24 décembre 2023
-                    </h6>
-                    <h6 class="card-title time_date time">
-                      <i class="bi bi-clock"></i> 12h
-                    </h6>
-                  </div>
-                  <div class="card_info_div">
-                    <div>
-                      <img
-                        src="../assets/artists/masharu.png"
-                        class="artist_avatar card_info"
-                      />
-                    </div>
-                    <h6 class="card-title card_info_text">
-                      Plus d'info <i class="bi bi-chevron-right"></i>
-                    </h6>
-                  </div>
-                </div>
-              </a>
-            </div>
+              </div>
+            </a>
           </div>
-          </section>
+
+          <div class="col card_col">
+            <a href="../app/artwork.html" class="card art px-2 pt-2">
+              <img
+                src="../assets/artworks/contact.png"
+                class="card-img-top featured_art_img"
+              />
+              <div class="card-body pt-2 px-0 pb-0">
+                <h5 class="card-title">Contact</h5>
+                <h6 class="card-title">Par Plusieurs artistes</h6>
+                <div class="time_date_div">
+                  <h6 class="card-title time_date">
+                    <i class="bi bi-calendar3"></i> 24 décembre 2023
+                  </h6>
+                  <h6 class="card-title time_date time">
+                    <i class="bi bi-clock"></i> 12h
+                  </h6>
+                </div>
+                <div class="card_info_div">
+                  <div>
+                    <img
+                      src="../assets/artists/emanuel_gollob.png"
+                      class="artist_avatar card_info"
+                    />
+                  </div>
+                  <h6 class="card-title card_info_text">
+                    Plus d'info <i class="bi bi-chevron-right"></i>
+                  </h6>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col card_col">
+            <a href="../app/artwork.html" class="card art px-2 pt-2">
+              <img
+                src="../assets/artworks/edible_earth.jpg"
+                class="card-img-top featured_art_img"
+              />
+              <div class="card-body pt-2 px-0 pb-0">
+                <h5 class="card-title">Edible Earth</h5>
+                <h6 class="card-title">Par masharu</h6>
+                <div class="time_date_div">
+                  <h6 class="card-title time_date">
+                    <i class="bi bi-calendar3"></i> 24 décembre 2023
+                  </h6>
+                  <h6 class="card-title time_date time">
+                    <i class="bi bi-clock"></i> 12h
+                  </h6>
+                </div>
+                <div class="card_info_div">
+                  <div>
+                    <img
+                      src="../assets/artists/masharu.png"
+                      class="artist_avatar card_info"
+                    />
+                  </div>
+                  <h6 class="card-title card_info_text">
+                    Plus d'info <i class="bi bi-chevron-right"></i>
+                  </h6>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
 
       <!-- BOTTOM ART ROW START -->
-      <section class="bottom_art_section">
+      <section class="bottom_art_section px-3">
         <div class="row">
-          <h2 class="vedette_text">Autres oeuvres et performances</h2>
+          <h2 class="vedette_text pt-3">Autres oeuvres et performances</h2>
           <div class="col container-fluid bot_art_container">
-            <div class="col bot_card_col">
-              <a href="../app/artwork.html" class="card bot_art">
+            <div class="col bot_card_col pb-2">
+              <a href="../app/artwork.html" class="card bot_art px-2 pt-2">
                 <img
                   src="../assets/artworks/obama.png"
                   class="card-img-top other_art_img"
                 />
-                <div class="card-body">
+                <div class="card-body px-0">
                   <h5 class="card-title">Obama Deep Fake</h5>
                   <h6 class="card-title">Par Jordan Peele</h6>
                   <div class="time_date_div">
@@ -294,13 +286,13 @@
               </a>
             </div>
 
-            <div class="col bot_card_col">
-              <a href="../app/artwork.html" class="card bot_art">
+            <div class="col bot_card_col pb-2">
+              <a href="../app/artwork.html" class="card bot_art px-2 pt-2">
                 <img
                   src="../assets/artworks/thereisnoplanetb.png"
                   class="card-img-top other_art_img"
                 />
-                <div class="card-body">
+                <div class="card-body px-0">
                   <h5 class="card-title">Raindrop</h5>
                   <h6 class="card-title">Par Alistair McClymont</h6>
                   <div class="time_date_div">
@@ -326,13 +318,13 @@
               </a>
             </div>
 
-            <div class="col bot_card_col pb-3">
-              <a href="../app/artwork.html" class="card bot_art">
+            <div class="col bot_card_col pb-3 pb-2">
+              <a href="../app/artwork.html" class="card bot_art px-2 pt-2">
                 <img
                   src="../assets/artworks/makingtechno.png"
                   class="card-img-top other_art_img"
                 />
-                <div class="card-body">
+                <div class="card-body px-0">
                   <h5 class="card-title">Making Techno with Music Robots</h5>
                   <h6 class="card-title">Par Moritz Simon Geist</h6>
                   <div class="time_date_div">
@@ -372,7 +364,7 @@
                 582-424MO. UI de l'app créé par Quoc Huy Do
               </p>
             </div>
-            <div class="col-sm-6 col-12 tim_svg_div">
+            <div class="col-sm-6 col-12 tim_svg_div mb-0">
               <img
                 class="tim_svg"
                 src="https://tim-montmorency.com/timdoc/shared/images/logo-tim.svg"
@@ -390,6 +382,7 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"
   ></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="../js/script.js"></script>
   <!-- :( -->
 </html>

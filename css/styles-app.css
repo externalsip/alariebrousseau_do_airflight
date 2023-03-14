@@ -90,8 +90,10 @@ nav {
   margin-top: 8.5em;
 }
 
-.form_control {
-  max-width: 100px;
+.search_icon {
+  position: absolute;
+  left: 91%;
+  height: 38px;
 }
 
 .btn.active {
@@ -104,15 +106,11 @@ nav {
 }
 
 .filters {
-  margin-top: 1em;
-  overflow-x: hidden;
   min-width: 720px;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
+.swiper-slide {
+  height: 42px;
 }
 
 li {
@@ -128,73 +126,71 @@ li {
   border-style: none;
 }
 
-.input-group> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+.input-group
+  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(
+    .valid-feedback
+  ):not(.invalid-tooltip):not(.invalid-feedback) {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
 
-main{
+main {
   overflow-x: hidden;
-} 
+}
 
 /*--------------------------------------------------------- 
 # THE CARDS !!!
 ---------------------------------------------------------*/
 
-
-.art{
+.art {
   overflow-x: hidden;
   height: 20vh;
   color: black;
   text-decoration: none;
   min-height: 300px;
-  padding: 0px 10px 0px 10px;
   min-width: 200px;
   max-width: 200px;
   transition: 0.25s;
 }
 
-.card-col{
-  padding-right: 0px;
+.card-col {
   max-width: 200px;
 }
 
-.art:hover{
+.art:hover {
   background-color: var(--gray);
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
-.featured_art_img{
+.featured_art_img {
   object-fit: cover;
   height: 40%;
   min-height: 150px;
   object-position: 50% 50%;
   border-bottom-left-radius: var(--bs-card-inner-border-radius);
   border-bottom-right-radius: var(--bs-card-inner-border-radius);
-  box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.3);
-  margin-top: 10px;
+  box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.3);
 }
 
-.vedette_text{
+.vedette_text {
   font-size: 25px;
-  margin-top: 15px;
 }
 
-.time_date{
+.time_date {
   color: gray;
   font-size: 11px;
   display: inline;
 }
 
-.time_date_div{
+.time_date_div {
   display: flex;
   justify-content: space-between;
 }
 
-.artist_avatar{
+.artist_avatar {
   height: 35px;
   width: 35px;
   min-height: 35px;
@@ -204,63 +200,42 @@ body{
   object-fit: cover;
 }
 
-.card_info_div{
+.card_info_div {
   display: flex;
   justify-content: space-between;
 }
 
-.card_info_text{
+.card_info_text {
   align-self: center;
-  margin-bottom: 0px;
   color: var(--bs-info);
 }
 
-.card-body{
-  padding: 0px;
-  padding-top: 10px;
-}
-
-#top_cards{
+#top_cards {
   width: 140%;
 }
 
 /*--------------------------------------------------------- 
 # THE BOTTOM CARDS !!!
 ---------------------------------------------------------*/
-
-.card-col{
-  padding-right: 0px;
-}
-
-.bot_card_col{
-  margin-top: 10px;
-}
-
-.bot_card_col:first-child{
-  margin-top: 0px;
-}
-
-.bot_art{
+.bot_art {
   overflow-x: hidden;
   height: 20vh;
   color: black;
   text-decoration: none;
-  min-height: 325px;
-  padding: 0px 10px 0px 10px;
+  height: auto;
   min-width: 200px;
   transition: 0.25s;
 }
 
-.bot_art:hover{
+.bot_art:hover {
   background-color: var(--gray);
 }
 
-.other_art_img{
+.other_art_img {
   object-fit: cover;
   height: 20vh;
   object-position: 50% 50%;
   border-bottom-left-radius: var(--bs-card-inner-border-radius);
   border-bottom-right-radius: var(--bs-card-inner-border-radius);
-  box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.3);
-  margin-top: 10px;
+  box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.3);
 }
