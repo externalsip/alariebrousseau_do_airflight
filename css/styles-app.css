@@ -105,6 +105,10 @@ nav {
   --bs-btn-active-bg: var(--bs-info);
 }
 
+.searchbar_form{
+  width: 100%;
+}
+
 .filters {
   min-width: 720px;
 }
@@ -126,16 +130,12 @@ li {
   border-style: none;
 }
 
-.input-group
-  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(
-    .valid-feedback
-  ):not(.invalid-tooltip):not(.invalid-feedback) {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
 main {
   overflow-x: hidden;
+}
+
+.swiper-filer{
+  width:100%;
 }
 
 /*--------------------------------------------------------- 

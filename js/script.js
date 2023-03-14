@@ -26,6 +26,8 @@ var swiper_filters = new Swiper(".swiper-filters", {
   slidesPerView: "auto",
   freeMode: true,
   spaceBetween: 10,
+  centeredSlides: true,
+  initialSlide: 2,
 });
 
 var swiper_filters = new Swiper(".swiper-featured-artworks", {
