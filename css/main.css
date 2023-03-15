@@ -2,22 +2,9 @@
 # Styles Généraux 
 ---------------------------------------------------------*/
 *{box-sizing: border-box;}
-
-:root {
-    --white: #ffffff;
-    --black: #000000;
-    --teal: #00b9ae;
-    --dark_teal: #037171;
-    --darkest_teal: #03312e;
-    --light_blue: #8b95c9;
-    --gray: #D9D9D9;
-  }
   
   @import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Roboto:wght@100&display=swap');
-  @font-face {
-    font-family: "coolvetica";
-    src: url("../assets/fonts/coolvetica/coolvetica-rg.otf"), format("opentype");
-  }
+  
   h1,.h1{
     font-size: 64px;
     font-weight: 400;
@@ -44,7 +31,7 @@ h4,.h4{
 }
 
 .btn-outline-success {
-    border: 3px solid var(--teal);
+    border: 3px solid var(--bs-secondary);
     color: var(--bs-secondary);
   }
   

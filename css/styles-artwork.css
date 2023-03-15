@@ -36,7 +36,7 @@ nav {
   width: 65px;
   border-style: none;
   margin-left: 5%;
-  background-color: var(--gray);
+  background-color: var(--bs-light);
   font-size: 32px;
   display: flex;
   justify-content: center;
