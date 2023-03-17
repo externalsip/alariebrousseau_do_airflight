@@ -26,9 +26,17 @@ nav {
   align-items: center;
 }
 
-.bi-heart {
+#heart {
   font-size: 32px;
   color: var(--bs-red);
+}
+
+.like:hover{
+  background-color: var(--bs-dark);
+}
+
+.like:active{
+  transform: translateY(2px);
 }
 
 .navbar-toggler {
