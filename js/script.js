@@ -43,7 +43,7 @@ if(document.getElementById("app") != null){
   centeredSlides: true,
   initialSlide: 2,
 });
-var swiper_filters = new Swiper(".swiper-featured-artworks", {
+var swiper_featured = new Swiper(".swiper-featured-artworks", {
   direction: "horizontal",
   slidesPerView: 3,
   freeMode: true,
